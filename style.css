@@ -1,0 +1,92 @@
+#polka_1, #polka_2 {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  background: radial-gradient(#D8D8D8 2px, transparent 2px);
+  background-size: 20px 20px; }
+
+#polka_1 {
+  height: 200px;
+  width: 40%; }
+
+#polka_2 {
+  right: 0;
+  height: 80%;
+  width: 30%; }
+
+#menu_bar #logo {
+  max-width: maxWidthLogo; }
+#menu_bar #contact_me_menu {
+  max-width: 100px; }
+#menu_bar .left, #menu_bar .middle, #menu_bar .right {
+  float: left;
+  height: 100px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center; }
+#menu_bar .left {
+  width: 15%;
+  padding-left: 4%; }
+#menu_bar .middle {
+  width: 70%;
+  justify-content: center; }
+  #menu_bar .middle .menu_item {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; }
+  #menu_bar .middle .menu_item:hover {
+    font-weight: bold;
+    cursor: pointer; }
+#menu_bar .right {
+  width: 15%;
+  padding-left: auto;
+  padding-right: 4%;
+  border: solid 2px orange; }
+
+#content_page {
+  display: flex;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 4%;
+  padding-right: 4%; }
+  #content_page #welcome_text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    float: left;
+    width: 28%; }
+    #content_page #welcome_text h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      margin: 0;
+      padding-bottom: 10px; }
+    #content_page #welcome_text #sub_1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #61666C;
+      margin: 0;
+      padding-bottom: 20px; }
+    #content_page #welcome_text #sub_2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: #9098A1;
+      line-height: 150%;
+      padding-bottom: 20px; }
+    #content_page #welcome_text #contact_me #icon {
+      max-width: 150px; }
+  #content_page #welcome_image {
+    display: flex;
+    box-sizing: border-box;
+    float: left;
+    width: 72%;
+    justify-content: center;
+    align-items: center; }
+    #content_page #welcome_image #welcome_img {
+      max-width: 450px; }
+
+/*# sourceMappingURL=style.css.map */

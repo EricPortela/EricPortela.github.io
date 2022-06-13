@@ -14,12 +14,14 @@ $paddingSide: 4%;
     background-size : 20px 20px;
 }
 
+
 #polka_1 {
     @extend %polka_background;
 
     height: 200px;
-    width: 40%;
+    width: 30%;
 }
+
 
 #polka_2 {
     @extend %polka_background;
@@ -27,16 +29,10 @@ $paddingSide: 4%;
     right: 0;
     height: 80%;
     width: 30%;
-
-
 }
 
 
 #menu_bar {
-
-    #logo {
-        max-width: maxWidthLogo;
-    }
 
     #contact_me_menu {
         max-width: 100px;
@@ -64,6 +60,16 @@ $paddingSide: 4%;
         width: $columnWidthOuter;
 
         padding-left: $paddingSide;
+
+        #logo {
+            max-width: maxWidthLogo;
+        }
+    
+        #logo:hover {
+            transition: 1s;
+            color: #006492;
+        }
+        
         // justify-content: center
     }
 
@@ -72,10 +78,54 @@ $paddingSide: 4%;
         width: $columnWidthMiddle;
         justify-content: center;
 
+        ul {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            li {
+                position: relative;
+                list-style: none;
+                display: inline;
+                padding: 50px 50px;
+                list-style: none;
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    line-height: 1em;
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: gray;
+                    // -webkit-text-stroke: 1px #00171F;
+                }
+
+                a::before {
+                    content: attr(data-text);
+                    position: absolute;
+                    color: var(--clr);
+                    width: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    border-right: 2px solid var(--clr);
+                    -webkit-text-stroke: 1px var(--clr);
+                }
+
+                a:hover::before {
+                    width: 100%;
+                    filter: drop-shadow(0 0 25px var(--clr))               
+                }
+            }
+        }
+
         .menu_item {
             width: 15%;
             display: flex;
-            
+
             justify-content: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
@@ -89,11 +139,12 @@ $paddingSide: 4%;
 
     .right {
         @extend %menu_column;
+        flex-direction: row-reverse;
         width: $columnWidthOuter;
 
         padding-left: auto;
         padding-right: $paddingSide;
-        border: solid 2px orange;
+        // border: solid 2px orange;
         // justify-content: center;
     }
 }
@@ -114,7 +165,7 @@ $paddingSide: 4%;
 
 
 
-    #welcome_text {
+    #left_content {
         // border: solid 5px red;
         display: flex;
         flex-direction: column;
@@ -153,19 +204,19 @@ $paddingSide: 4%;
         }
     }
 
-    #welcome_image {
+    #right_content {
         // border: solid 5px red;
         display: flex;
+        flex-direction: row-reverse;
         box-sizing: border-box;
         float: left;
         width: 72%;
 
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
 
         #welcome_img {
             max-width: 450px;
-
         }
 
     }

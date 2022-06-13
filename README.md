@@ -2,7 +2,7 @@
 
 
 <p align="center"> 
-     <a href="ericportela.github.io">
+     <a href="https://ericportela.github.io/#">
           <img src="https://user-images.githubusercontent.com/58792679/173256744-c32c730d-42dd-48ca-b2c2-24243586ada7.svg" width="200">
      </a>
      <br>

@@ -1,8 +1,14 @@
 $columnWidthOuter: 15%;
 $columnWidthMiddle: 70%;
-$menuHeight: 100px;
-$maxWidthLogo: 120px;
+$menuHeight: 12vh;
+$section1Height: 80vh;
+$maxWidthLogo: 100px;
 $paddingSide: 4%;
+
+body {
+    margin: 0;
+    padding: 0;
+}
 
 
 %polka_background {
@@ -18,6 +24,7 @@ $paddingSide: 4%;
 #polka_1 {
     @extend %polka_background;
 
+    left: $paddingSide;
     height: 200px;
     width: 30%;
 }
@@ -26,7 +33,7 @@ $paddingSide: 4%;
 #polka_2 {
     @extend %polka_background;
 
-    right: 0;
+    right: $paddingSide;
     height: 80%;
     width: 30%;
 }
@@ -64,13 +71,7 @@ $paddingSide: 4%;
         #logo {
             width: $maxWidthLogo;
         }
-    
-        #logo:hover {
-
-            
-        }
-        
-        // justify-content: center
+              
     }
 
     .middle {
@@ -150,15 +151,13 @@ $paddingSide: 4%;
 }
 
 
-
-
-#content_page {
+#section_1 {
     // border: solid 5px orange;
     display: flex;
     float: left;
     box-sizing: border-box;
 
-    height: 2000px;
+    height: $section1Height;
     width: 100%;
     padding-top: 10%;
     padding-left: $paddingSide;
@@ -217,5 +216,75 @@ $paddingSide: 4%;
         }
 
     }
-
 }
+
+.section_scroll {
+    // border: 1px solid red;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: $paddingSide;
+    padding-right: $paddingSide;
+    background-color: #68ADE7;
+    justify-content: center;
+    
+    height: 35px;
+    width: 100%;
+
+    .indicator {
+
+        display: flex;
+        justify-content: center;
+
+        top: -35px;
+        width: 50px;
+        height: 80px;
+        // border: 2px solid #006492;
+        background-color: #006492;
+        opacity: 40%;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .indicator::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        background-color: lightgray;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 10px;
+        border-radius: 25%;
+        animation: animate 1.5s ease-in-out infinite;
+    }
+
+    @keyframes animate{
+        0% {
+            opacity: 0;
+            top: 10px;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            top: 50px;
+            transform: scale(0.7);
+        }
+    }
+}
+
+
+#section_2 {
+    display: flex;
+    box-sizing: border-box;
+    padding-left: $paddingSide;
+    padding-right: $paddingSide;
+    background-color: #68ADE7;
+    height: 100vh;
+    width: 100%;
+}
+

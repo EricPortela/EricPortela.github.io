@@ -2,7 +2,9 @@
 
 
 <p align="center"> 
-     <img src="https://user-images.githubusercontent.com/58792679/173256744-c32c730d-42dd-48ca-b2c2-24243586ada7.svg" width="200">
+     <a href="ericportela.github.io">
+          <img src="https://user-images.githubusercontent.com/58792679/173256744-c32c730d-42dd-48ca-b2c2-24243586ada7.svg" width="200">
+     </a>
      <br>
      <br>
      <a> My showcasing/portfolio website. Made as a project besides studies in Computer Science at LTH (by Eric Portela). 

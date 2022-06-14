@@ -7,8 +7,12 @@
      </a>
      <br>
      <br>
-     <a> My showcasing/portfolio website. Made as a project besides studies in Computer Science at LTH (by Eric Portela). 
-     </a>
+     <a> My showcasing/portfolio website. Made as a project besides studies in Computer Science at LTH (by Eric Portela). Click the logo or the link down below, to access my webpage (GitHub Pages). </a>
+     <br>
+     <br>
+     <a href="https://ericportela.github.io/#"> https://ericportela.github.io/# </a>
+
+     
 </p>
      
 # 

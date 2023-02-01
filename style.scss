@@ -8,6 +8,7 @@ $paddingSide: 4%;
 body {
     margin: 0;
     padding: 0;
+    scroll-snap-type: x mandatory;
 }
 
 
@@ -36,6 +37,7 @@ body {
     right: $paddingSide;
     height: 80%;
     width: 30%;
+    // display: flex;
 }
 
 
@@ -46,7 +48,7 @@ body {
     }
 
     // Inheritance
-    // The generic code, in other words the code that all three columsn share in common
+    // The generic code, in other words the code that all three columns share in common
     // |
     // |
     // V
@@ -215,6 +217,27 @@ body {
             height: 400px;
         }
 
+    }
+}
+
+
+#section_2 {
+
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+
+    #mockup {
+
+        overflow-wrap: break-all;
+
+        #m1 {
+            width: 45vh;
+        }
+
+        .h1 {
+            max-width: 20%;
+        }
     }
 }
 

@@ -2,50 +2,49 @@ $columnWidthOuter: 15%;
 $columnWidthMiddle: 70%;
 $menuHeight: 12vh;
 $section1Height: 80vh;
-$maxWidthLogo: 100px;
+$maxWidthLogo: 50px;
 $paddingSide: 4%;
+
+$purpleColor: #6563FF;
 
 body {
     margin: 0;
     padding: 0;
     scroll-snap-type: x mandatory;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-%polka_background {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
+// %polka_background {
+//     position: absolute;
+//     bottom: 0;
+//     z-index: -1;
 
-    background: radial-gradient(#D8D8D8 2px, transparent 2px);
-    background-size : 20px 20px;
-}
-
-
-#polka_1 {
-    @extend %polka_background;
-
-    left: $paddingSide;
-    height: 200px;
-    width: 30%;
-}
+//     background: radial-gradient(#D8D8D8 2px, transparent 2px);
+//     background-size : 20px 20px;
+// }
 
 
-#polka_2 {
-    @extend %polka_background;
+// #polka_1 {
+//     @extend %polka_background;
 
-    right: $paddingSide;
-    height: 80%;
-    width: 30%;
-    // display: flex;
-}
+//     left: $paddingSide;
+//     height: 200px;
+//     width: 30%;
+// }
+
+
+// #polka_2 {
+//     @extend %polka_background;
+
+//     right: $paddingSide;
+//     height: 80%;
+//     width: 30%;
+//     // display: flex;
+// }
 
 
 #menu_bar {
-
-    #contact_me_menu {
-        max-width: 100px;
-    }
 
     // Inheritance
     // The generic code, in other words the code that all three columns share in common
@@ -72,6 +71,7 @@ body {
 
         #logo {
             width: $maxWidthLogo;
+            height: auto;
         }
               
     }
@@ -100,7 +100,7 @@ body {
                     line-height: 1em;
 
                     font-family: Arial, Helvetica, sans-serif;
-                    font-size: 20px;
+                    font-size: 16px;
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     color: gray;
@@ -147,8 +147,22 @@ body {
 
         padding-left: auto;
         padding-right: $paddingSide;
-        // border: solid 2px orange;
-        // justify-content: center;
+        
+        #cv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 50%;
+            height: 40%;
+            border: solid 1px $purpleColor;
+
+            border-radius: 5px;
+
+            p {
+                color: $purpleColor;
+            }
+        }
     }
 }
 
@@ -156,55 +170,93 @@ body {
 #section_1 {
     // border: solid 5px orange;
     display: flex;
-    float: left;
-    box-sizing: border-box;
-
-    height: $section1Height;
     width: 100%;
-    padding-top: 10%;
-    padding-left: $paddingSide;
-    padding-right: $paddingSide;
+    justify-content: center;
 
-
-
-    #left_content {
-        // border: solid 5px red;
+    #content {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        float: left;
-        width: 28%;
 
-        h1 {
+        height: $section1Height;
+        width: 80%;
+        padding: 5%;
+        // padding-top: 10%;
+        // padding-left: $paddingSide;
+        // padding-right: $paddingSide;
+
+        #intro_header {
+            color: $purpleColor;
+            font-size: 22px;
+        }
+
+        %baseHeader {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 40px;
+            font-size: 50px;
             margin: 0;
             padding-bottom: 10px;
         }
 
-        #sub_1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            color: #61666C;
-            margin: 0;
-            padding-bottom: 20px;
+        #name_header {
+            @extend %baseHeader;
+            color: #2C2C2E;
         }
 
-        #sub_2 {
+        #title_header {
+            @extend %baseHeader;
+            color: #757575;
+        }
+
+        #subtitle {
+            display: flex;
+            width: 50%;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
-            color: #9098A1;
+            color: #757575;
             line-height: 150%;
             padding-bottom: 20px;
         }
 
-        #contact_me {
-            #icon {
-                max-width: 150px;
+        #linkedin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+
+            border-radius: 5px;            
+            border: solid 2px $purpleColor;
+
+            p {
+                color: $purpleColor;
             }
         }
     }
+
+    // #sub_1 {
+    //     font-family: Arial, Helvetica, sans-serif;
+    //     font-weight: bold;
+    //     font-size: 20px;
+    //     color: #61666C;
+    //     margin: 0;
+    //     padding-bottom: 20px;
+    // }
+
+    // #sub_2 {
+    //     display: flex;
+    //     width: 50%;
+    //     font-family: Arial, Helvetica, sans-serif;
+    //     font-size: 18px;
+    //     color: #9098A1;
+    //     line-height: 150%;
+    //     padding-bottom: 20px;
+    // }
+
+    // #contact_me {
+    //     #icon {
+    //         max-width: 150px;
+    //     }
+    // }
+    
 
     #right_content {
         // border: solid 5px red;
@@ -224,6 +276,7 @@ body {
 #section_2 {
 
     display: flex;
+    // flex-direction: column;
     padding: 5%;
     justify-content: center;
 
@@ -247,7 +300,7 @@ body {
     box-sizing: border-box;
     padding-left: $paddingSide;
     padding-right: $paddingSide;
-    background-color: #68ADE7;
+    background-color: #2C2C2E; //#68ADE7;
     justify-content: center;
     
     height: 35px;
@@ -262,7 +315,7 @@ body {
         width: 50px;
         height: 80px;
         // border: 2px solid #006492;
-        background-color: #006492;
+        background-color: $purpleColor; //#006492;
         opacity: 40%;
         border-radius: 20px;
         position: relative;
@@ -306,7 +359,7 @@ body {
     box-sizing: border-box;
     padding-left: $paddingSide;
     padding-right: $paddingSide;
-    background-color: #68ADE7;
+    background-color: #2C2C2E; //#68ADE7;
     height: 100vh;
     width: 100%;
 }

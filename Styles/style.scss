@@ -1,0 +1,385 @@
+$columnWidthOuter: 15%;
+$columnWidthMiddle: 70%;
+$menuHeight: 12vh;
+$section1Height: 80vh;
+$maxWidthLogo: 50px;
+$paddingSide: 4%;
+
+$purpleColor: #6563FF;
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+// %polka_background {
+//     position: absolute;
+//     bottom: 0;
+//     z-index: -1;
+
+//     background: radial-gradient(#D8D8D8 2px, transparent 2px);
+//     background-size : 20px 20px;
+// }
+
+
+// #polka_1 {
+//     @extend %polka_background;
+
+//     left: $paddingSide;
+//     height: 200px;
+//     width: 30%;
+// }
+
+
+// #polka_2 {
+//     @extend %polka_background;
+
+//     right: $paddingSide;
+//     height: 80%;
+//     width: 30%;
+//     // display: flex;
+// }
+
+
+#menu_bar {
+
+    display: flex;
+    background-color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    // Inheritance
+    // The generic code, in other words the code that all three columns share in common
+    // |
+    // |
+    // V
+    
+    %menu_column {
+        float: left;
+        height: $menuHeight;
+        display: flex;
+
+        box-sizing: border-box;
+        align-items: center;
+
+        // border: solid 5px red;
+    }
+
+    .left {
+        @extend %menu_column;
+        width: $columnWidthOuter;
+
+        padding-left: $paddingSide;
+
+        #logo {
+            width: $maxWidthLogo;
+            height: auto;
+        }
+              
+    }
+
+    .middle {
+        @extend %menu_column;
+        width: $columnWidthMiddle;
+        justify-content: center;
+
+        ul {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            li {
+                position: relative;
+                list-style: none;
+                display: inline;
+                padding: 50px 50px;
+                list-style: none;
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    line-height: 1em;
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: gray;
+                    // -webkit-text-stroke: 1px #00171F;
+                }
+
+                a::before {
+                    content: attr(data-text);
+                    position: absolute;
+                    color: var(--clr);
+                    width: 0;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    border-right: 1px solid var(--clr);
+                    -webkit-text-stroke: 1px var(--clr);
+                }
+
+                a:hover::before {
+                    width: 100%;
+                    filter: drop-shadow(0 0 25px var(--clr))               
+                }
+            }
+        }
+
+        .menu_item {
+            width: 15%;
+            display: flex;
+
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        .menu_item:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        @extend %menu_column;
+        flex-direction: row-reverse;
+        width: $columnWidthOuter;
+
+        padding-left: auto;
+        padding-right: $paddingSide;
+
+        a {
+            display: flex;
+            width: 50%;
+            text-decoration: none;
+
+            #cv {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 100%;
+                height: 40%;
+                border: solid 1px $purpleColor;
+
+                border-radius: 5px;
+
+                p {
+                    color: $purpleColor;
+                }
+            }
+        }
+    }
+}
+
+
+#section_1 {
+    // border: solid 5px orange;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        height: $section1Height;
+        width: 80%;
+        padding: 5%;
+        // padding-top: 10%;
+        // padding-left: $paddingSide;
+        // padding-right: $paddingSide;
+
+        #intro_header {
+            color: $purpleColor;
+            font-size: 22px;
+        }
+
+        %baseHeader {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 55px;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        #name_header {
+            @extend %baseHeader;
+            color: #2C2C2E;
+        }
+
+        #title_header {
+            @extend %baseHeader;
+            color: #757575;
+        }
+
+        #subtitle {
+            display: flex;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #757575;
+            line-height: 150%;
+            padding-bottom: 20px;
+        }
+
+        a {
+            display: flex;
+            width: 20%;
+            text-decoration: none;
+
+            #linkedin {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+    
+                border-radius: 5px;            
+                border: solid 2px $purpleColor;
+    
+                p {
+                    color: $purpleColor;
+                }
+            }
+        }
+    }
+
+    // #sub_1 {
+    //     font-family: Arial, Helvetica, sans-serif;
+    //     font-weight: bold;
+    //     font-size: 20px;
+    //     color: #61666C;
+    //     margin: 0;
+    //     padding-bottom: 20px;
+    // }
+
+    // #sub_2 {
+    //     display: flex;
+    //     width: 50%;
+    //     font-family: Arial, Helvetica, sans-serif;
+    //     font-size: 18px;
+    //     color: #9098A1;
+    //     line-height: 150%;
+    //     padding-bottom: 20px;
+    // }
+
+    // #contact_me {
+    //     #icon {
+    //         max-width: 150px;
+    //     }
+    // }
+    
+
+    #right_content {
+        // border: solid 5px red;
+        display: flex;
+        flex-direction: row-reverse;
+        box-sizing: border-box;
+        width: 72%;
+
+        #welcome_img {
+            height: 400px;
+        }
+
+    }
+}
+
+
+#section_2 {
+
+    display: flex;
+    // flex-direction: column;
+    padding: 5%;
+    justify-content: center;
+
+    #mockup {
+
+        overflow-wrap: break-all;
+
+        #m1 {
+            width: 45vh;
+        }
+
+        .h1 {
+            max-width: 20%;
+        }
+    }
+}
+
+.section_scroll {
+    // border: 1px solid red;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: $paddingSide;
+    padding-right: $paddingSide;
+    background-color: #2C2C2E; //#68ADE7;
+    justify-content: center;
+    
+    height: 35px;
+    width: 100%;
+
+    .indicator {
+
+        display: flex;
+        justify-content: center;
+
+        top: -35px;
+        width: 50px;
+        height: 80px;
+        // border: 2px solid #006492;
+        background-color: $purpleColor; //#006492;
+        opacity: 40%;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .indicator::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        background-color: lightgray;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 10px;
+        border-radius: 25%;
+        animation: animate 1.5s ease-in-out infinite;
+    }
+
+    @keyframes animate{
+        0% {
+            opacity: 0;
+            top: 10px;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            top: 50px;
+            transform: scale(0.7);
+        }
+    }
+}
+
+
+#section_2 {
+    display: flex;
+    box-sizing: border-box;
+    padding-left: $paddingSide;
+    padding-right: $paddingSide;
+    background-color: #2C2C2E; //#68ADE7;
+    height: 100vh;
+    width: 100%;
+}
+

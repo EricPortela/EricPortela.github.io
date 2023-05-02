@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6">
+            <circle id="Oval" fill="#2C2C2C" cx="30" cy="30" r="30"></circle>
+            <g id="Group-5" transform="translate(16.000000, 16.105132)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <polyline id="Path-10" points="11.0041505 4.19189848e-15 9.08911835e-13 -2.42530251e-16 9.09494702e-13 27.8948676 28.0341651 27.8948676 28.0341651 16.2323377"></polyline>
+                <path d="M16.6792219,0 L28.0341651,0 L28.0341651,11.3403785 M15.1691598,12.6496176 L28.0341651,0" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

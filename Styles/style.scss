@@ -159,6 +159,8 @@ body {
             display: flex;
             width: 50%;
             text-decoration: none;
+            background-color: $purpleColor;
+            border-radius: 5px;
 
             #cv {
                 display: flex;
@@ -168,13 +170,25 @@ body {
                 width: 100%;
                 height: 40%;
                 border: solid 1px $purpleColor;
+                background-color: white;
 
                 border-radius: 5px;
 
                 p {
                     color: $purpleColor;
                 }
+
+                //PART 1 OF ANIMATION
+                transition: transform 250ms;
+                will-change: transform;
             }
+
+            //PART 2 OF ANIMATION
+            #cv:hover, #cv:focus{
+                transform: translate(-5px, -5px);
+                cursor: url('/Assets/new_tab_icon.svg'), auto;
+            }
+
         }
     }
 }
@@ -234,6 +248,9 @@ body {
             display: flex;
             width: 20%;
             text-decoration: none;
+            background-color: $purpleColor;
+
+            border-radius: 5px;
 
             #linkedin {
                 display: flex;
@@ -243,39 +260,25 @@ body {
     
                 border-radius: 5px;            
                 border: solid 2px $purpleColor;
+
+                background-color: white;
     
                 p {
                     color: $purpleColor;
                 }
+
+                //PART 1 OF ANIMATION
+                transition: transform 250ms;
+                will-change: transform;
+            }
+
+            //PART 2 OF ANIMATION
+            #linkedin:hover, #linkedin:focus{
+                transform: translate(-5px, -5px);
+                cursor: url('/Assets/new_tab_icon.svg'), auto;
             }
         }
     }
-
-    // #sub_1 {
-    //     font-family: Arial, Helvetica, sans-serif;
-    //     font-weight: bold;
-    //     font-size: 20px;
-    //     color: #61666C;
-    //     margin: 0;
-    //     padding-bottom: 20px;
-    // }
-
-    // #sub_2 {
-    //     display: flex;
-    //     width: 50%;
-    //     font-family: Arial, Helvetica, sans-serif;
-    //     font-size: 18px;
-    //     color: #9098A1;
-    //     line-height: 150%;
-    //     padding-bottom: 20px;
-    // }
-
-    // #contact_me {
-    //     #icon {
-    //         max-width: 150px;
-    //     }
-    // }
-    
 
     #right_content {
         // border: solid 5px red;

@@ -5,6 +5,9 @@ $section1Height: 80vh;
 $maxWidthLogo: 50px;
 $paddingSide: 4%;
 
+$cellHeaderHeight: 5%;
+$circleHeight: 20px;
+
 $purpleColor: #6563FF;
 
 body {
@@ -197,10 +200,11 @@ body {
 #section_1 {
     // border: solid 5px orange;
     display: flex;
-    width: 100%;
+    // width: 100%;
     justify-content: center;
 
     #content {
+
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -208,9 +212,6 @@ body {
         height: $section1Height;
         width: 80%;
         padding: 5%;
-        // padding-top: 10%;
-        // padding-left: $paddingSide;
-        // padding-right: $paddingSide;
 
         #intro_header {
             color: $purpleColor;
@@ -290,7 +291,6 @@ body {
         #welcome_img {
             height: 400px;
         }
-
     }
 }
 
@@ -378,11 +378,89 @@ body {
 
 #section_2 {
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+
     padding-left: $paddingSide;
     padding-right: $paddingSide;
     background-color: #2C2C2E; //#68ADE7;
-    height: 100vh;
+    
     width: 100%;
+
+
+    //VERTICAL LINE + CIRCLES/EVENT
+
+    //PART 1 - Evenet = 1 row
+    .event {
+        display: flex;
+        width: 100%;
+
+        //PART 2 - Vertical line same height as its content to the left
+        .timeline {
+            display: flex;
+            justify-content: center;
+    
+            align-self: stretch; //makes the height of the timeline same as the the content on left
+            
+            margin: 0px;
+            width: 4%;
+            padding-top: 0.5%;
+    
+            background: linear-gradient(to right, 
+                                        transparent 0%, 
+                                        transparent calc(50% - 0.81px), 
+                                        $purpleColor calc(50% - 0.8px), 
+                                        $purpleColor calc(50% + 0.8px), 
+                                        transparent calc(50% + 0.81px), 
+                                        transparent 100%);
+            
+            //PART 3 - Circle overlapping each line
+            .circle {
+                display: flex;
+                width: 30%;
+                height:0;
+                padding-bottom: 30%;
+                -moz-border-radius: 30%;
+                -webkit-border-radius: 30%;
+                border-radius: 30%;
+    
+                border-radius: 20px;
+                border: solid 2px $purpleColor;
+                background-color: #2c2c2c;
+                z-index: 9;
+            }
+        }
+    }
+
+    
+    //Content to the left of the timeline
+    #content {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+
+        .cell_header {
+            display: flex;
+            width: 100%;
+            height: 5%;
+            // background-color: red;
+
+            h1 {
+                padding-top: 0;
+                margin-top: 0;
+                color: white;
+            }
+        }
+
+        p {
+            color: white;
+            padding-bottom: 4%;
+        }
+
+        h3 {
+            color: lightgray;
+        }
+    }
 }
 

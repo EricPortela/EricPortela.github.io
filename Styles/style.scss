@@ -475,3 +475,117 @@ body {
     }
 }
 
+#section_footer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    width: 100%;
+
+    .contact_div {
+        display: flex;
+
+        height: 20vh;
+        width: 80%;
+        transform: translate(0, -100%);
+
+        border-radius: 20px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, #637bff 0%, $purpleColor 35%, #7f63ff 100%);
+        // padding: 2%;
+        // background-color: $purpleColor;
+
+        #left {
+            display: flex;
+            flex-direction: column;
+
+            width: 50%;
+
+            padding: 2%;
+
+            h1 {
+                padding: 0;
+                margin: 0;
+                font-weight: normal;
+                color: white;
+            }
+        }
+
+        #right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+
+            padding: 2%;
+            column-gap: 2vw;
+
+            .contact_me {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                height: 5vh;
+
+                padding: 2%;
+    
+                background-color: #2C2C2E;
+    
+                // border: solid 2px white;
+                border-radius: 30px;
+    
+                p {
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .quote_div {
+        display: flex;
+        border-radius: 25px 0 25px 0;
+        border: solid 2px #2C2C2E;
+        padding: 1%;
+
+        p {
+            display: inline;
+            padding: 0;
+            margin: 0;
+
+            #quotation_mark_1 {
+                font-size: x-large;
+                float: left;
+            }
+
+            #quotation_mark_2 {
+                font-size: xx-large;
+                float: right;
+            }
+
+            #quote {
+                white-space: nowrap;
+                font-size: large;
+                font-weight: bold;
+            }
+    
+            #papa {
+                color: gray;
+                font-style: italic;
+            }
+        }
+    }
+
+    .footer_text_div {
+        padding-top: 2%;
+
+        p {
+            color: $purpleColor;
+            font-size: small;
+            text-align: center;
+        }
+    }
+}
+

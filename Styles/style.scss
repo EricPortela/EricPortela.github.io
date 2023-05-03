@@ -378,8 +378,11 @@ body {
 
 #section_2 {
     display: flex;
+
     flex-direction: column;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 
     padding-left: $paddingSide;
     padding-right: $paddingSide;
@@ -393,7 +396,9 @@ body {
     //PART 1 - Evenet = 1 row
     .event {
         display: flex;
-        width: 100%;
+
+        width: 80%;
+
 
         //PART 2 - Vertical line same height as its content to the left
         .timeline {
@@ -437,14 +442,20 @@ body {
     #content {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 100%;
         height: 100%;
 
         .cell_header {
             display: flex;
             width: 100%;
             height: 5%;
-            // background-color: red;
+
+            // position: -webkit-sticky; /* Safari */
+            // position: sticky;
+            // top: $menuHeight; //makes the titles stack rigth under the menu
+
+            // background-color: #2C2C2E;
+
 
             h1 {
                 padding-top: 0;

@@ -609,6 +609,7 @@ body {
 #section_footer .quote #quote_div p {
   display: inline;
   margin: 0;
+  color: #6563FF;
 }
 
 #section_footer .quote #quote_div p #quotation_mark_1 {

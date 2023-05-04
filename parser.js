@@ -19,7 +19,17 @@ http.onload = function() {
                 </div>
         
                 <div id="content">
-                    <div class="cell_header"> <h1>${experience.title}</h1> </div>
+                    <div class="cell_header"> 
+                        <div id=half_1>
+                            <h1>${experience.title}</h1>
+                            <h3>${experience.company}</h3>
+                        </div>
+
+                        <div id=half_2>
+                            <img src="${experience.logo_path}">
+                        </div>
+                    </div>
+
                     <h3>${experience.period}</h3>
                     <p>${experience.description}</p>
                 </div>

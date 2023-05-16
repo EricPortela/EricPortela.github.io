@@ -271,7 +271,7 @@ body {
   align-self: stretch;
   margin: 0px;
   width: 4%;
-  padding-top: 2%;
+  padding-top: 1%;
   background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.81px), #6563FF calc(50% - 0.8px), #6563FF calc(50% + 0.8px), transparent calc(50% + 0.81px), transparent 100%);
 }
 #section_2 .event .timeline .circle {
@@ -291,6 +291,7 @@ body {
   width: 100%;
   height: 100%;
   padding-bottom: 4%;
+  padding-left: 1%;
 }
 #section_2 #content .cell_header {
   display: flex;
@@ -309,7 +310,6 @@ body {
   padding-top: 0;
   margin-top: 0;
   color: white;
-  padding: 10px;
 }
 #section_2 #content .cell_header #half_1 h3 {
   font-style: italic;
@@ -457,6 +457,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+#section_footer .bottom_footer #right ul, #section_footer .bottom_footer #middle ul, #section_footer .bottom_footer #left ul {
+  padding: 0;
+  list-style-type: none;
+}
+#section_footer .bottom_footer #right ul li, #section_footer .bottom_footer #middle ul li, #section_footer .bottom_footer #left ul li {
+  font-size: 12px;
+  color: black;
+  padding: 0.5vh;
+}
 #section_footer .bottom_footer #left #name_logo {
   display: flex;
   justify-content: center;
@@ -489,15 +498,6 @@ body {
   font-size: large;
   display: inline;
   font-weight: bold;
-}
-#section_footer .bottom_footer #right ul {
-  padding: 0;
-  list-style-type: none;
-}
-#section_footer .bottom_footer #right ul li {
-  font-size: 12px;
-  color: black;
-  padding: 0.5vh;
 }
 #section_footer .bottom_footer #right p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

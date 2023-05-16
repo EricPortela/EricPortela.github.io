@@ -7,10 +7,6 @@ body {
 
 #menu_bar {
   display: flex;
-  background-color: white; /* Safari */
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 #menu_bar .right, #menu_bar .middle, #menu_bar .left {
   float: left;
@@ -18,6 +14,9 @@ body {
   display: flex;
   box-sizing: border-box;
   align-items: center;
+  background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+  background-size: 10px 10px;
+  background-repeat: repeat;
 }
 #menu_bar .left {
   width: 15%;
@@ -115,6 +114,9 @@ body {
 #section_1 {
   display: flex;
   justify-content: center;
+  background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+  background-size: 10px 10px;
+  background-repeat: repeat;
 }
 #section_1 #content {
   display: flex;
@@ -135,7 +137,7 @@ body {
   padding-bottom: 10px;
 }
 #section_1 #content #name_header {
-  color: #2C2C2E;
+  color: #151618;
 }
 #section_1 #content #title_header {
   color: #757575;
@@ -204,7 +206,7 @@ body {
   box-sizing: border-box;
   padding-left: 4%;
   padding-right: 4%;
-  background-color: #2C2C2E;
+  background-color: #151618;
   justify-content: center;
   height: 35px;
   width: 100%;
@@ -256,7 +258,7 @@ body {
   align-items: center;
   padding-left: 4%;
   padding-right: 4%;
-  background-color: #2C2C2E;
+  background-color: #151618;
   width: 100%;
 }
 #section_2 .event {
@@ -269,7 +271,7 @@ body {
   align-self: stretch;
   margin: 0px;
   width: 4%;
-  padding-top: 0.5%;
+  padding-top: 2%;
   background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.81px), #6563FF calc(50% - 0.8px), #6563FF calc(50% + 0.8px), transparent calc(50% + 0.81px), transparent 100%);
 }
 #section_2 .event .timeline .circle {
@@ -280,7 +282,7 @@ body {
   border-radius: 30%;
   border-radius: 20px;
   border: solid 2px #6563FF;
-  background-color: #2c2c2c;
+  background-color: #151618;
   z-index: 9;
 }
 #section_2 #content {
@@ -288,6 +290,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  padding-bottom: 4%;
 }
 #section_2 #content .cell_header {
   display: flex;
@@ -295,10 +298,18 @@ body {
   width: 100%;
   height: 5%;
 }
+#section_2 #content .cell_header #half_1 {
+  display: flex;
+  flex-direction: column;
+}
 #section_2 #content .cell_header #half_1 h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: table;
   padding-top: 0;
   margin-top: 0;
   color: white;
+  padding: 10px;
 }
 #section_2 #content .cell_header #half_1 h3 {
   font-style: italic;
@@ -309,7 +320,6 @@ body {
 }
 #section_2 #content p {
   color: white;
-  padding-bottom: 4%;
 }
 #section_2 #content h3 {
   color: lightgray;
@@ -322,6 +332,9 @@ body {
   align-items: center;
   padding-top: 5%;
   width: 100%;
+  background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+  background-size: 10px 10px;
+  background-repeat: repeat;
 }
 #section_footer .contact_div {
   display: flex;
@@ -360,7 +373,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 5vh;
-  background-color: #2C2C2E;
+  background-color: #151618;
   border-radius: 30px;
 }
 #section_footer .contact_div #right .contact_me p {
@@ -432,11 +445,65 @@ body {
   padding-right: 2%;
   padding-bottom: 2%;
 }
-#section_footer .footer_text_div {
-  padding-top: 2%;
+#section_footer .bottom_footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-#section_footer .footer_text_div p {
+#section_footer .bottom_footer #right, #section_footer .bottom_footer #middle, #section_footer .bottom_footer #left {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+#section_footer .bottom_footer #left #name_logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+#section_footer .bottom_footer #left #name_logo p {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: table;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  display: inline;
   color: #6563FF;
-  font-size: small;
-  text-align: center;
+  font-weight: bold;
+}
+#section_footer .bottom_footer #left #name_logo #logo {
+  width: 20px;
+  height: auto;
+}
+#section_footer .bottom_footer #left p {
+  width: 50%;
+  font-size: 12px;
+  color: black;
+}
+#section_footer .bottom_footer #middle p {
+  color: #6563FF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  display: inline;
+  font-weight: bold;
+}
+#section_footer .bottom_footer #right ul {
+  padding: 0;
+  list-style-type: none;
+}
+#section_footer .bottom_footer #right ul li {
+  font-size: 12px;
+  color: black;
+  padding: 0.5vh;
+}
+#section_footer .bottom_footer #right p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  display: inline;
+  font-weight: bold;
+  color: #6563FF;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

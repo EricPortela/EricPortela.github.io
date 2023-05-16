@@ -50,11 +50,13 @@ body {
 #menu_bar {
 
     display: flex;
-    background-color: white;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    // background-color: white;
+
+    //CODE BELOW MAKES MENU BAR STICKY!
+    // position: -webkit-sticky; /* Safari */
+    // position: sticky;
+    // top: 0;
+    // z-index: 10;
 
     // Inheritance
     // The generic code, in other words the code that all three columns share in common
@@ -70,7 +72,9 @@ body {
         box-sizing: border-box;
         align-items: center;
 
-        // border: solid 5px red;
+        background-image: radial-gradient( #C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+        background-size: 10px 10px;
+        background-repeat: repeat;
     }
 
     .left {
@@ -78,6 +82,7 @@ body {
         width: $columnWidthOuter;
 
         padding-left: $paddingSide;
+
 
         #logo {
             width: $maxWidthLogo;
@@ -198,16 +203,20 @@ body {
 
 
 #section_1 {
-    // border: solid 5px orange;
     display: flex;
-    // width: 100%;
     justify-content: center;
+
+    // background-color: #2C2C2E;
+    background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+    background-size: 10px 10px;
+    background-repeat: repeat;
 
     #content {
 
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
+
 
         height: $section1Height;
         width: 80%;
@@ -227,7 +236,7 @@ body {
 
         #name_header {
             @extend %baseHeader;
-            color: #2C2C2E;
+            color:  #151618;//#2C2C2E;
         }
 
         #title_header {
@@ -298,7 +307,6 @@ body {
 #section_2 {
 
     display: flex;
-    // flex-direction: column;
     padding: 5%;
     justify-content: center;
 
@@ -322,7 +330,7 @@ body {
     box-sizing: border-box;
     padding-left: $paddingSide;
     padding-right: $paddingSide;
-    background-color: #2C2C2E; //#68ADE7;
+    background-color:  #151618;//#2C2C2E; //#68ADE7;
     justify-content: center;
     
     height: 35px;
@@ -386,7 +394,7 @@ body {
 
     padding-left: $paddingSide;
     padding-right: $paddingSide;
-    background-color: #2C2C2E; //#68ADE7;
+    background-color: #151618;//#2C2C2E; //#68ADE7;
     
     width: 100%;
 
@@ -409,7 +417,7 @@ body {
             
             margin: 0px;
             width: 4%;
-            padding-top: 0.5%;
+            padding-top: 2%;
     
             background: linear-gradient(to right, 
                                         transparent 0%, 
@@ -431,7 +439,7 @@ body {
     
                 border-radius: 20px;
                 border: solid 2px $purpleColor;
-                background-color: #2c2c2c;
+                background-color: #151618;
                 z-index: 9;
             }
         }
@@ -444,6 +452,7 @@ body {
         flex-direction: column;
         width: 100%;
         height: 100%;
+        padding-bottom: 4%;
 
         .cell_header {
             display: flex;
@@ -452,6 +461,7 @@ body {
             width: 100%;
             height: 5%;
 
+
             // position: -webkit-sticky; /* Safari */
             // position: sticky;
             // top: $menuHeight; //makes the titles stack rigth under the menu
@@ -459,10 +469,24 @@ body {
             // background-color: #2C2C2E;
 
             #half_1 {
+                
+                display: flex;
+                flex-direction: column;
+                
                 h1 {
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    // workaround for IE11
+                    display: table;
+  
                     padding-top: 0;
                     margin-top: 0;
                     color: white;
+
+                    // border-radius: 10px;
+                    padding: 10px;
+                    // background-color: $purpleColor;
+                    // border-bottom: solid 3px $purpleColor;
                 }
 
                 h3 {
@@ -480,8 +504,9 @@ body {
         }
 
         p {
+            
             color: white;
-            padding-bottom: 4%;
+            
         }
 
         h3 {
@@ -498,6 +523,10 @@ body {
     align-items: center;
     padding-top: 5%;
     width: 100%;
+
+    background-image: radial-gradient( #C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+    background-size: 10px 10px;
+    background-repeat: repeat;
 
     .contact_div {
         display: flex;
@@ -549,7 +578,7 @@ body {
                 
                 height: 5vh;
     
-                background-color: #2C2C2E;
+                background-color: #151618; //#2C2C2E;
     
                 // border: solid 2px white;
                 border-radius: 30px;
@@ -650,16 +679,105 @@ body {
 
     
 
+    .bottom_footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        %section_part {
+            display: flex;
+            flex-direction: column;
+
+            width: 33%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #left {
+            @extend %section_part;
+
+            #name_logo {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                column-gap: 2%;
+                // padding: 2vw;
+
+                // background-color: red;
+
+                p {
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    // workaround for IE11
+                    display: table;
+                    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: large;
+                    display: inline;
+                    color: $purpleColor;
+                    font-weight: bold
+                }
     
+                #logo {
+                    width: 20px;
+                    height: auto;
+                }
+            }
 
-    .footer_text_div {
-        padding-top: 2%;
+            p {
+                width: 50%;
+                font-size: 12px;
+                color: black
+            }
+            
+        }
 
-        p {
-            color: $purpleColor;
-            font-size: small;
-            text-align: center;
+        #middle {
+            @extend %section_part;
+
+            p {
+                color: $purpleColor;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: large;
+                display: inline;
+                font-weight: bold
+            }
+        }
+
+        #right {
+            @extend %section_part;
+
+            ul {
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    font-size: 12px;
+                    color: black;
+                    padding: 0.5vh;
+                }
+            }
+
+            p {
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: large;
+                display: inline;
+                font-weight: bold;
+                color: $purpleColor;
+                font-weight: bold
+            }
         }
     }
+
+    
+
+    // .footer_text_div {
+    //     padding-top: 2%;
+
+    //     p {
+    //         color: $purpleColor;
+    //         font-size: small;
+    //         text-align: center;
+    //     }
+    // }
 }
 

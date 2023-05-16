@@ -218,7 +218,6 @@ body {
   width: 50px;
   height: 80px;
   background-color: #6563FF;
-  opacity: 40%;
   border-radius: 20px;
   position: relative;
 }
@@ -227,7 +226,7 @@ body {
   position: absolute;
   width: 10px;
   height: 20px;
-  background-color: lightgray;
+  background-color: white;
   margin: auto;
   left: 0;
   right: 0;
@@ -345,6 +344,7 @@ body {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #637bff 0%, #6563FF 35%, #7f63ff 100%);
   padding: 2%;
+  margin-bottom: 0;
 }
 #section_footer .contact_div #left {
   display: flex;
@@ -469,6 +469,8 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  border-top: solid 1px lightgray;
+  margin-bottom: 5vh;
 }
 #section_footer .bottom_footer #right, #section_footer .bottom_footer #middle, #section_footer .bottom_footer #left {
   display: flex;

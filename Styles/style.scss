@@ -346,7 +346,7 @@ body {
         height: 80px;
         // border: 2px solid #006492;
         background-color: $purpleColor; //#006492;
-        opacity: 40%;
+        // opacity: 40%;
         border-radius: 20px;
         position: relative;
     }
@@ -356,7 +356,7 @@ body {
         position: absolute;
         width: 10px;
         height: 20px;
-        background-color: lightgray;
+        background-color: white;
         margin: auto;
         left: 0;
         right: 0;
@@ -538,6 +538,8 @@ body {
         background: linear-gradient(90deg, #637bff 0%, $purpleColor 35%, #7f63ff 100%);
         padding: 2%;
 
+        margin-bottom: 0;
+
         // background-color: $purpleColor;
 
         #left {
@@ -711,6 +713,9 @@ body {
         display: flex;
         flex-direction: row;
         width: 100%;
+
+        border-top: solid 1px lightgray;
+        margin-bottom: 5vh;
 
         %section_part {
             display: flex;

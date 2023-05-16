@@ -525,6 +525,7 @@ body {
     background-size: 10px 10px;
     background-repeat: repeat;
 
+
     .contact_div {
         display: flex;
 
@@ -532,10 +533,11 @@ body {
         width: 80%;
         transform: translate(0, -100%);
 
-        border-radius: 10px;
+        border-radius: 20px;
         background: rgb(2,0,36);
         background: linear-gradient(90deg, #637bff 0%, $purpleColor 35%, #7f63ff 100%);
         padding: 2%;
+
         // background-color: $purpleColor;
 
         #left {
@@ -576,9 +578,13 @@ body {
                 height: 5vh;
     
                 background-color: #151618; //#2C2C2E;
+                border: solid 2px #151618;
     
                 // border: solid 2px white;
                 border-radius: 30px;
+
+                background-color: transparent;
+                transition: transform ease-in-out 0.3s;
     
                 p {
                     color: white;
@@ -589,8 +595,33 @@ body {
                     padding: 1vw 1vw 1vw 0.5vw;
                 }
             }
-        }
 
+            
+        }
+    }
+
+    .contact_div:hover, .contact_div:focus {
+        transition: ease-in 0.2s;
+        box-shadow: 0 4px 4px gray;
+        #right {
+            .contact_me {
+                background-color: transparent;
+                border: solid 2px white;
+                transform: translateX(-20px);
+                transition: ease-in-out 0.3s;
+            }
+        }
+    }
+
+    .contact_div:not(:hover) {
+        transition: ease-in 0.3s;
+
+        #right {
+            .contact_me {
+                background-color: #151618;
+                transform: translateX(0); /* Animate back to original position */
+            }
+        }
     }
 
     .quote {

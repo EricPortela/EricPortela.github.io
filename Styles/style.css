@@ -341,7 +341,7 @@ body {
   height: 15vh;
   width: 80%;
   transform: translate(0, -100%);
-  border-radius: 10px;
+  border-radius: 20px;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #637bff 0%, #6563FF 35%, #7f63ff 100%);
   padding: 2%;
@@ -374,7 +374,10 @@ body {
   align-items: center;
   height: 5vh;
   background-color: #151618;
+  border: solid 2px #151618;
   border-radius: 30px;
+  background-color: transparent;
+  transition: transform ease-in-out 0.3s;
 }
 #section_footer .contact_div #right .contact_me p {
   color: white;
@@ -382,6 +385,23 @@ body {
 }
 #section_footer .contact_div #right .contact_me img {
   padding: 1vw 1vw 1vw 0.5vw;
+}
+#section_footer .contact_div:hover, #section_footer .contact_div:focus {
+  transition: ease-in 0.2s;
+  box-shadow: 0 4px 4px gray;
+}
+#section_footer .contact_div:hover #right .contact_me, #section_footer .contact_div:focus #right .contact_me {
+  background-color: transparent;
+  border: solid 2px white;
+  transform: translateX(-20px);
+  transition: ease-in-out 0.3s;
+}
+#section_footer .contact_div:not(:hover) {
+  transition: ease-in 0.3s;
+}
+#section_footer .contact_div:not(:hover) #right .contact_me {
+  background-color: #151618;
+  transform: translateX(0); /* Animate back to original position */
 }
 #section_footer .quote {
   display: flex;

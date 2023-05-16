@@ -605,6 +605,8 @@ body {
     .contact_div:hover, .contact_div:focus {
         transition: ease-in 0.2s;
         box-shadow: 0 4px 4px gray;
+        border: solid 2px white;
+
         #right {
             .contact_me {
                 background-color: transparent;
@@ -614,8 +616,10 @@ body {
             }
         }
     }
+      
 
     .contact_div:not(:hover) {
+        border: none;
         transition: ease-in 0.3s;
 
         #right {

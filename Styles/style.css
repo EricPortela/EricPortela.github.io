@@ -480,6 +480,8 @@ body {
   width: 80%;
   height: auto;
   flex-direction: column;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
 }
 #section_footer .grades_div #my_grades {
   width: 100%;
@@ -489,12 +491,15 @@ body {
   padding-bottom: 2vh;
 }
 #section_footer .grades_div #my_grades .grade_cell {
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
   width: 18vw;
   background-color: #6563FF;
   border-radius: 20px;
   margin-right: 2vw;
   padding: 2vw 2vw 2vw 2vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 #section_footer .grades_div #my_grades .grade_cell p {
   font-size: 2vh;
@@ -517,6 +522,13 @@ body {
   padding: 10px;
   margin: 0;
   border-radius: 20px;
+}
+#section_footer .grades_div #my_grades::-webkit-scrollbar {
+  display: none;
+}
+#section_footer .grades_div #my_grades {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 #section_footer .bottom_footer {
   display: flex;

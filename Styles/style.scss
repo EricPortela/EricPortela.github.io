@@ -163,6 +163,8 @@ body {
         padding-left: auto;
         padding-right: $paddingSide;
 
+        column-gap: 1vh;
+
         a {
             display: flex;
             width: 50%;

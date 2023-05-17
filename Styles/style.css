@@ -83,6 +83,8 @@ body {
   width: 15%;
   padding-left: auto;
   padding-right: 4%;
+  -moz-column-gap: 1vh;
+       column-gap: 1vh;
 }
 #menu_bar .right a {
   display: flex;

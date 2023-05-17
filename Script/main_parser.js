@@ -96,7 +96,7 @@ function createCharts(grades) {
                 'Grade 3'
             ],
             datasets: [{
-                label: 'Grade distribution - ' + grade.grade,
+                label: 'Grade distribution (students/grade)', //+ grade.course_code,
                 data: grade.grade_distribution,
                 fill: true,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',

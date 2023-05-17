@@ -50,7 +50,7 @@ function createCharts(grades) {
                 'Grade 3'
             ],
             datasets: [{
-                label: 'Grade distribution - ' + grade.grade,
+                label: 'Grade distribution - ' + grade.course,
                 data: grade.grade_distribution,
                 fill: true,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',

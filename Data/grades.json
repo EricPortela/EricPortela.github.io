@@ -54,6 +54,22 @@
         "grade": 4,
         
         "course_plan": "link"
+    },
+
+    {
+        "course": "Computer & Telecom",
+
+        "course_code": "EITG01",
+
+        "credits": 7.5,
+
+        "grade_distribution": [36, 81, 157],
+
+        "grade": 4,
+        
+        "course_plan": "link"
     }
+
+
 
 ]

@@ -475,6 +475,49 @@ body {
   padding-right: 2%;
   padding-bottom: 2%;
 }
+#section_footer .grades_div {
+  display: flex;
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+}
+#section_footer .grades_div #my_grades {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  align-items: flex-start; /* Align items to the start */
+  padding-bottom: 2vh;
+}
+#section_footer .grades_div #my_grades .grade_cell {
+  flex-shrink: 0;
+  width: 18vw;
+  background-color: #6563FF;
+  border-radius: 20px;
+  margin-right: 2vw;
+  padding: 2vh 2vw 2vh 2vw;
+}
+#section_footer .grades_div #my_grades .grade_cell p {
+  font-size: 2vh;
+  color: white;
+}
+#section_footer .grades_div #my_grades .grade_cell #subtitle_1 {
+  font-style: italic;
+}
+#section_footer .grades_div #my_grades .grade_cell #title {
+  font-size: large;
+  font-weight: bold;
+}
+#section_footer .grades_div #my_grades .grade_cell #subtitle_2 {
+  font-size: 1.5vh;
+}
+#section_footer .grades_div #my_grades .grade_cell canvas {
+  display: flex;
+  background-color: white;
+  width: 20px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 20px;
+}
 #section_footer .bottom_footer {
   display: flex;
   flex-direction: row;

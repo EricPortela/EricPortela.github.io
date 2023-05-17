@@ -768,7 +768,62 @@ body {
         }
     }
 
+    .grades_div {
+        display: flex;
+
+        width: 80%; 
+        height: auto;
+
+        flex-direction: column;
+        // background-color: blue;
+
+        #my_grades {
+            width: 100%;
+            display: flex;
+            overflow-x: auto;
+            align-items: flex-start; /* Align items to the start */
+            padding-bottom: 2vh;
+
     
+            .grade_cell {
+                flex-shrink: 0;
+                width: 18vw;
+                background-color: $purpleColor;
+                border-radius: 20px;
+                margin-right: 2vw;
+    
+                padding: 2vh 2vw 2vh 2vw;
+    
+                p {
+                    font-size: 2vh;
+                    color: white;
+                }
+    
+                #subtitle_1 {
+                    font-style: italic;
+                }
+    
+                #title {
+                    font-size: large;
+                    font-weight: bold;
+                }
+    
+                #subtitle_2 {
+                    font-size: 1.5vh;
+                }
+    
+                canvas {
+                    display: flex;
+                    background-color: white;
+                    width: 20px;
+                    padding: 10px;
+                    margin: 0;
+    
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
 
     .bottom_footer {
         display: flex;

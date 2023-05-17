@@ -26,7 +26,9 @@ http.onload = function() {
                         </div>
 
                         <div id=half_2>
-                            <img src="${experience.logo_path}">
+                            <a href="${experience.website}" target="_blank">
+                                <img src="${experience.logo_path}">
+                            </a>
                         </div>
                     </div>
 

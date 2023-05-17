@@ -315,9 +315,15 @@ body {
 #section_2 #content .cell_header #half_1 h3 {
   font-style: italic;
 }
-#section_2 #content .cell_header #half_2 img {
+#section_2 #content .cell_header #half_2 a {
+  display: flex;
+}
+#section_2 #content .cell_header #half_2 a img {
   max-width: 10vw;
   height: auto;
+}
+#section_2 #content .cell_header #half_2 a:hover, #section_2 #content .cell_header #half_2 a:focus {
+  cursor: url("/Assets/new_tab_icon.svg"), auto;
 }
 #section_2 #content p {
   color: white;

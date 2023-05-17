@@ -4,6 +4,8 @@
 
         "logo_path": "Assets/spotify_logo.svg",
 
+        "website": "https://lifeatspotify.com",
+
         "company": "Spotify",
 
         "period": "m yyyy - m yyyy",
@@ -17,6 +19,8 @@
         "title": "Web Development Intern",
 
         "logo_path": "Assets/med_logo.svg",
+
+        "website": "https://www.medicine.lu.se",
 
         "company": "Faculty of Medicine | Dept. of Experimental Medical Science",
 
@@ -32,6 +36,8 @@
 
         "logo_path": "Assets/lth_logo.svg",
 
+        "website": "https://www.lunduniversity.lu.se/lucat/group/v1000234",
+
         "company": "Faculty of Engineering | Dept. of Computer Science",
 
         "period": "Sep. 2022 - Dec. 2022",
@@ -46,6 +52,8 @@
 
         "logo_path": "Assets/ies_logo.svg",
 
+        "website": "https://engelska.se",
+
         "company": "Internationella Engelska Skolan",
 
         "period": "m yyyy - m yyyy",
@@ -59,6 +67,8 @@
         "title": "Quantitative Analyst",
 
         "logo_path": "Assets/linc_logo.svg",
+
+        "website": "https://linclund.com",
 
         "company": "LINC - Lund University Finance Society",
 

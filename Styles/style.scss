@@ -495,11 +495,24 @@ body {
             }
 
             #half_2 {
-                img {
-                    max-width: 10vw;
-                    height: auto;
+                a {
+                    display: flex;
+                    img {
+                        max-width: 10vw;
+                        height: auto;
+                    }
                 }
+
+                a:hover, a:focus {
+                    cursor: url('/Assets/new_tab_icon.svg'), auto;
+                }
+                // img {
+                //     max-width: 10vw;
+                //     height: auto;
+                // }
             }
+
+            
         }
 
         p {

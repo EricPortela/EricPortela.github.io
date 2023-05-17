@@ -637,9 +637,7 @@ body {
                 height: 5vh;
     
                 background-color: #151618; //#2C2C2E;
-                border: solid 2px #151618;
     
-                // border: solid 2px white;
                 border-radius: 30px;
 
                 background-color: transparent;
@@ -678,6 +676,7 @@ body {
     .contact_div:not(:hover) {
         border: none;
         transition: ease-in 0.3s;
+        border: solid 2px $purpleColor;
 
         #right {
             .contact_me {

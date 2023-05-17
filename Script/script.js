@@ -2,25 +2,30 @@ var isDragging = false;
 var startPosition = null;
 var scrollLeft = null;
 
-var myGradesDiv = document.getElementById("my_grades");
+const slider = document.getElementById("my_grades");
+let isDown = false;
+let startX;
+let scrollLeft;
 
-myGradesDiv.addEventListener("mousedown", startDrag);
-myGradesDiv.addEventListener("mouseup", endDrag);
-myGradesDiv.addEventListener("mousemove", drag);
-
-function startDrag(event) {
-  isDragging = true;
-  startPosition = event.clientX;
-  scrollLeft = myGradesDiv.scrollLeft;
-}
-
-function endDrag() {
-  isDragging = false;
-}
-
-function drag(event) {
-  if (!isDragging) return;
-
-  var delta = event.clientX - startPosition;
-  myGradesDiv.scrollLeft = scrollLeft - delta;
-}
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});

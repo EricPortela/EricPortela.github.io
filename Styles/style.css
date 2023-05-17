@@ -382,7 +382,6 @@ body {
   align-items: center;
   height: 5vh;
   background-color: #151618;
-  border: solid 2px #151618;
   border-radius: 30px;
   background-color: transparent;
   transition: transform ease-in-out 0.3s;
@@ -408,6 +407,7 @@ body {
 #section_footer .contact_div:not(:hover) {
   border: none;
   transition: ease-in 0.3s;
+  border: solid 2px #6563FF;
 }
 #section_footer .contact_div:not(:hover) #right .contact_me {
   background-color: #151618;

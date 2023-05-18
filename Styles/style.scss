@@ -776,9 +776,42 @@ body {
         flex-direction: column;
         // background-color: blue;
 
+        .toggle_buttons {
+            margin-bottom: 2vh;
+            button {
+                padding: 10px 20px;
+                background-color: #6563FF;
+                color: white;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+        
+            button:hover, button:active {
+                background-color: #504CFF;
+            }
+        }
+
+        #disclaimer {
+            text-align: center;
+            color: gray;
+            font-size: smaller;
+
+            a {
+                color: gray;
+            }
+
+            .emphasized {
+                 font-style: italic; 
+            }
+        }
+
         #my_grades {
-            width: 100%;
             display: flex;
+            width: 100%;
             overflow-x: auto;
             align-items: flex-start; /* Align items to the start */
             padding-bottom: 2vh;
@@ -797,6 +830,7 @@ body {
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     
                 p {
+                    display: inline-block;
                     font-size: 2vh;
                     color: white;
                 }

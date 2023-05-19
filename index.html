@@ -72,6 +72,14 @@
 
     </div>
 
+    <div class="floating_me">
+        <!-- <img src="Assets/animations/memoji_lost.gif"> -->
+        <video autoplay loop muted>
+            <source src="Assets/animations/memoji_lost.mov" type="video/mp4">
+        </video>
+
+    </div>
+
 
     <div id="section_1">
 
@@ -165,6 +173,9 @@
         </div>        
 
         <div class="bottom_footer">
+
+            
+
             <div id="left">
                 <div id="name_logo">
                     <p>Eric Portela</p>
@@ -172,8 +183,16 @@
                 </div>
 
                 <p>Designed & Built by Eric Portela with 🫶 in 🇸🇪. Animated elements powered by Lottie Files.</p>
-                <p>© Copyright 2023 Eric Portela. All Rights Reserved.</p>
+                <p id="copyright_text"></p>
+                
             </div>
+
+            <script>
+                var p_tag = document.getElementById("copyright_text");
+                var currentYear = new Date().getFullYear();
+                var text = "© Copyright " + currentYear + " Eric Portela. All Rights Reserved";
+                p_tag.innerHTML = text;
+            </script>
 
             <div id="middle">
                 <p>Menu</p>

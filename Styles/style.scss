@@ -204,6 +204,43 @@ body {
 }
 
 
+.floating_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $purpleColor;
+    position:fixed;
+	width:80px;
+    // height: 80vh;
+	height:80px;
+	bottom:30px;
+	right:30px;
+    // right:0px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+
+    video {
+        padding: 0;
+        margin: 0;
+        width: 100px;
+        object-fit: cover;
+        outline: 0px;
+        display: block;
+        // background-color: red;
+
+        
+    }
+
+    img {
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        height: auto;
+    }
+}
+
 #section_1 {
     display: flex;
     justify-content: center;

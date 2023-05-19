@@ -107,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
       gridView();
     });
   });
-  
-  
+
   
   

@@ -43,6 +43,20 @@
     },
 
     {
+        "course": "Database Techn.",
+
+        "course_code": "EDAF20",
+
+        "credits": 7.5,
+
+        "grade_distribution": [58, 165, 364],
+
+        "grade": 5,
+        
+        "course_plan": "link"
+    },
+
+    {
         "course": "Digital Systems",
 
         "course_code": "EITA15",

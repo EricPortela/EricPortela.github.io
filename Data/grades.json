@@ -43,6 +43,20 @@
     },
 
     {
+        "course": "Control Systems",
+
+        "course_code": "EIEF30",
+
+        "credits": 7.5,
+
+        "grade_distribution": [46, 118, 102],
+
+        "grade": 4,
+        
+        "course_plan": "link"
+    },
+
+    {
         "course": "Database Techn.",
 
         "course_code": "EDAF20",
@@ -51,7 +65,7 @@
 
         "grade_distribution": [58, 165, 364],
 
-        "grade": 5,
+        "grade": 4,
         
         "course_plan": "link"
     },

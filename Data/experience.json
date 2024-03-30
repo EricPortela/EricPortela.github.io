@@ -1,5 +1,21 @@
 [
     {
+        "title": "Thesis Worker",
+
+        "logo_path": "Assets/ikea_logo.svg",
+
+        "website": "https://jobs.ikea.com/en",
+
+        "company": "Ingka Group / IKEA",
+
+        "period": "Jan 2024 - present",
+
+        "description": "• Currently writing my thesis work at IKEA within Machine Learning and Al- Driven Predictive Event Orchestration for Scalable Data Pipelines at the Customer Order 360 team.",
+
+        "tags": ["", "", "", "", "", ""]
+    },
+
+    {
         "title": "Mobile Engineering Intern (iOS)",
 
         "logo_path": "Assets/spotify_logo.svg",
@@ -8,9 +24,9 @@
 
         "company": "Spotify",
 
-        "period": "m yyyy - m yyyy",
+        "period": "June 2023 - August 2023",
 
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos",
+        "description": "• Worked with every day tasks on the iOS-client of Spotify, specifically the unlaunched Audiobooks page (launch 3rd October on several markets). \n\n• My work included bug fixes and introducing new features, lifting data to the model layer and displaying it in the app. \n\n• Other tasks also included unit tests and UI tests. We worked agile, primarily using Jira, standups everyday and retros after each sprint. \n\n• Swift, UIKit, SwiftUI, Git, Bazel, protocol oriented programming.",
 
         "tags": ["", "", "", "", "", ""]
     },

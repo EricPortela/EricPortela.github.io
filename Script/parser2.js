@@ -27,10 +27,21 @@ http.onload = function() {
             count++;
         }
 
-        var json_to_html_tag = document.getElementById("my_grades");
-        json_to_html_tag.innerHTML = output;
 
-        createCharts(grades); // Call the function to create the charts and pass the grades array
+        document.addEventListener("DOMContentLoaded", function() {
+            var json_to_html_tag = document.getElementById("my_grades");
+            if (json_to_html_tag !== null) {
+                json_to_html_tag.innerHTML = output;
+                createCharts(grades); // Call the function to create the charts and pass the grades array
+            } else {
+                console.error("Element with ID 'my_grades' not found.");
+            }
+        });
+
+        // var json_to_html_tag = document.getElementById("my_grades");
+        // json_to_html_tag.innerHTML = output;
+
+        // createCharts(grades); // Call the function to create the charts and pass the grades array
     }
 };
 

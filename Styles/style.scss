@@ -50,6 +50,7 @@ body {
 #menu_bar {
 
     display: flex;
+
     // background-color: white;
 
     //CODE BELOW MAKES MENU BAR STICKY!
@@ -72,9 +73,10 @@ body {
         box-sizing: border-box;
         align-items: center;
 
-        background-image: radial-gradient( #C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
-        background-size: 10px 10px;
-        background-repeat: repeat;
+        // For the polka dotted background
+        // background-image: radial-gradient( #C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+        // background-size: 10px 10px;
+        // background-repeat: repeat;
     }
 
     .left {
@@ -259,10 +261,21 @@ body {
     display: flex;
     justify-content: center;
 
-    // background-color: #2C2C2E;
-    background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
-    background-size: 10px 10px;
-    background-repeat: repeat;
+    // For the polka dotted background
+    // background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
+    // background-size: 10px 10px;
+    // background-repeat: repeat;
+
+    #background-lottie {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        padding: 0px;
+        opacity: 20%;
+        // margin-right: -40vw;
+        // scale: 200%;
+    }
 
     #content {
 
@@ -284,16 +297,22 @@ body {
             font-size: 55px;
             margin: 0;
             padding-bottom: 10px;
+            transform: translateZ(10px);
+            // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
         }
 
         #name_header {
             @extend %baseHeader;
-            color:  #151618;//#2C2C2E;
+            color:  #2C2C2E;
+            text-shadow: 15px 10px  8px gray,
+               0 -1px 1px gray;
         }
 
         #title_header {
             @extend %baseHeader;
             color: #757575;
+            text-shadow: 15px 10px  8px gray,
+               0 -1px 1px gray;
         }
 
         #subtitle {
@@ -304,6 +323,8 @@ body {
             color: #757575;
             line-height: 150%;
             padding-bottom: 20px;
+            text-shadow: 15px 10px  8px gray,
+               0 -1px 1px gray;
         }
 
         a {
@@ -611,6 +632,9 @@ body {
         p {
             
             color: white;
+            white-space: pre-line;
+            margin-bottom: 10px;
+            line-height: 2;
             
         }
 

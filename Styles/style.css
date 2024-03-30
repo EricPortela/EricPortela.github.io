@@ -14,9 +14,6 @@ body {
   display: flex;
   box-sizing: border-box;
   align-items: center;
-  background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
-  background-size: 10px 10px;
-  background-repeat: repeat;
 }
 #menu_bar .left {
   width: 15%;
@@ -146,9 +143,14 @@ body {
 #section_1 {
   display: flex;
   justify-content: center;
-  background-image: radial-gradient(#C8C8C8 10%, transparent 11%), radial-gradient(#e53935 10%, transparent 11%);
-  background-size: 10px 10px;
-  background-repeat: repeat;
+}
+#section_1 #background-lottie {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding: 0px;
+  opacity: 20%;
 }
 #section_1 #content {
   display: flex;
@@ -167,12 +169,15 @@ body {
   font-size: 55px;
   margin: 0;
   padding-bottom: 10px;
+  transform: translateZ(10px);
 }
 #section_1 #content #name_header {
-  color: #151618;
+  color: #2C2C2E;
+  text-shadow: 15px 10px 8px gray, 0 -1px 1px gray;
 }
 #section_1 #content #title_header {
   color: #757575;
+  text-shadow: 15px 10px 8px gray, 0 -1px 1px gray;
 }
 #section_1 #content #subtitle {
   display: flex;
@@ -182,6 +187,7 @@ body {
   color: #757575;
   line-height: 150%;
   padding-bottom: 20px;
+  text-shadow: 15px 10px 8px gray, 0 -1px 1px gray;
 }
 #section_1 #content a {
   display: flex;
@@ -357,6 +363,9 @@ body {
 }
 #section_2 #content p {
   color: white;
+  white-space: pre-line;
+  margin-bottom: 10px;
+  line-height: 2;
 }
 #section_2 #content h3 {
   color: lightgray;

@@ -1,0 +1,35 @@
+.Menu {
+    // background-color: red;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    padding-top: 3vh;
+
+    .left-div {
+        font-family: 'PingFang HK';
+        font-weight: normal;
+        font-size: 200%;
+        display: flex;
+        width: 50%;
+        justify-content: left;
+        align-items: center;
+        padding: 0 5vw;
+        color: #2C2C2C;
+    }
+
+    .right-div {
+        font-family: 'PingFang HK';
+        font-weight: lighter;
+        font-size: larger;
+        display: flex;
+        width: 50%;
+        justify-content: right;
+        align-items: center;
+        column-gap: 5vw;
+        padding: 0 5vw;
+        color: #2C2C2C;
+        // background-color: red;
+    }
+
+}

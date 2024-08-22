@@ -1,0 +1,17 @@
+[
+    {
+        "title": "FINALYTICA [In Progress]",
+        "startYear": "2022",
+        "endYear": "present",
+        "description": "Currently solely an iOS app providing financial data for publicly listed companies on the NSYE and NASDAQ. Includes historical financial data (+10 years), SEC fillings, financial reports, insider trading, etc.",
+        "imgSource": "finalytica-mockup.svg"
+    },
+
+    {
+        "title": "SKYLTEN [REMOVED]",
+        "startYear": "2019",
+        "endYear": "2020",
+        "description": "Sweden’s first image classifier for parking signs. The app was integrated with a custom trained classifier programmed in Python, exported as a CoreML file, providing the user with sophisticated predictions (classification) of the taken image, also returning a result distribution (likelihoods).",
+        "imgSource": "skylten-mockup.svg"
+    }
+]

@@ -1,0 +1,79 @@
+.ProjectCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60vh;
+
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+    .text-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+        width: 40%;
+        row-gap: 4vh;
+        // background-color: blue;
+
+        %text-styling {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            font-family: 'PingFang HK';
+            width: 80%;
+            color: #2C2C2C;
+
+            line-break: auto
+            // background-color: red;
+        }
+
+        .title {
+            @extend %text-styling;
+
+            font-weight: bolder;
+            font-size: 1.8em;
+            text-transform: uppercase;
+        }
+
+        .year {
+            @extend %text-styling;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .description {
+            @extend %text-styling;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+    }
+
+    .image-div {
+        display: flex;
+        height: 100%;
+        width: 60%;
+        // background-color: orange;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

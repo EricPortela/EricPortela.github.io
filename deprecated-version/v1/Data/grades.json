@@ -1,0 +1,100 @@
+[
+
+    {
+        "course": "Calculus I & II",
+
+        "course_code": "FMAA50",
+
+        "credits": 15,
+
+        "grade_distribution": [45, 160, 323],
+
+        "grade": 5,
+
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Programming 1",
+
+        "course_code": "EDAA10",
+
+        "credits": 7.5,
+
+        "grade_distribution": [226, 231, 284],
+
+        "grade": 5,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Programming 2",
+
+        "course_code": "EDAA30",
+
+        "credits": 7.5,
+
+        "grade_distribution": [65, 77, 149],
+
+        "grade": 5,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Control Systems",
+
+        "course_code": "EIEF30",
+
+        "credits": 7.5,
+
+        "grade_distribution": [46, 118, 102],
+
+        "grade": 5,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Database Techn.",
+
+        "course_code": "EDAF20",
+
+        "credits": 7.5,
+
+        "grade_distribution": [58, 165, 364],
+
+        "grade": 4,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Digital Systems",
+
+        "course_code": "EITA15",
+
+        "credits": 15,
+
+        "grade_distribution": [36, 98, 177],
+
+        "grade": 4,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Computer & Telecom",
+
+        "course_code": "EITG01",
+
+        "credits": 7.5,
+
+        "grade_distribution": [36, 81, 157],
+
+        "grade": 4,
+        
+        "course_plan": "link"
+    }
+]

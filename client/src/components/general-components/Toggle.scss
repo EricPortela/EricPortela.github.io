@@ -1,0 +1,44 @@
+.Toggle {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+    justify-content: center;
+    width: 100vw;
+    height: 6vh;
+    // background-color: red;
+
+    %div-template {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D8D8D8;
+        color: black;
+        width: 10%;
+        border-radius: 25px;
+        transition: 0.3s;
+        border: none;
+    }
+
+    .left {
+        @extend %div-template;
+    }
+
+    .right {
+        @extend %div-template;
+    }
+
+    .left:hover, .right:hover {
+        border: solid 2px black;
+
+    }
+
+    .active {
+        background-color: black;
+        color: white;
+      }
+      
+      .inactive {
+        background-color: #D8D8D8;
+        color: black;
+      }
+}

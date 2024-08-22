@@ -1,13 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import SpeedDial from './components/SpeedDial'
-import Menu from './components/Menu'
+import './App.scss';
+import WorkPage from './pages/WorkPage';
+
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue
+} from "framer-motion";
+
 
 function App() {
+  const { scrollYProgress } = useScroll();
+
+  console.log(scrollYProgress);
+
   return (
     <div className="App">
-      <Menu></Menu>
-      <SpeedDial></SpeedDial>
+      <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />  
+      <WorkPage></WorkPage>
     </div>
   );
 }

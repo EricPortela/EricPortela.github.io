@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.9cb668b3.css",
-    "main.js": "/react-gh-pages/static/js/main.1e750481.js",
+    "main.css": "/react-gh-pages/static/css/main.5d10835c.css",
+    "main.js": "/react-gh-pages/static/js/main.412d38aa.js",
     "static/js/453.258b012d.chunk.js": "/react-gh-pages/static/js/453.258b012d.chunk.js",
     "static/media/finalytica-mockup.svg": "/react-gh-pages/static/media/finalytica-mockup.467d85d3a7e371b8ffe6.svg",
     "static/media/java-logo.svg": "/react-gh-pages/static/media/java-logo.93d8ae7316fe664d9574.svg",
@@ -20,12 +20,12 @@
     "static/media/spotify_logo.svg": "/react-gh-pages/static/media/spotify_logo.1f440583ab734d3f7bb0.svg",
     "static/media/mysql-logo.svg": "/react-gh-pages/static/media/mysql-logo.5dbd7ffb56a921cecde4.svg",
     "index.html": "/react-gh-pages/index.html",
-    "main.9cb668b3.css.map": "/react-gh-pages/static/css/main.9cb668b3.css.map",
-    "main.1e750481.js.map": "/react-gh-pages/static/js/main.1e750481.js.map",
+    "main.5d10835c.css.map": "/react-gh-pages/static/css/main.5d10835c.css.map",
+    "main.412d38aa.js.map": "/react-gh-pages/static/js/main.412d38aa.js.map",
     "453.258b012d.chunk.js.map": "/react-gh-pages/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cb668b3.css",
-    "static/js/main.1e750481.js"
+    "static/css/main.5d10835c.css",
+    "static/js/main.412d38aa.js"
   ]
 }

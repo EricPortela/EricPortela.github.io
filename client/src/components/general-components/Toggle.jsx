@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './Toggle.scss'
 
-function Toggle() {
+function Toggle({ onToggle }) {
     const [activeButton, setActiveButton] = useState('left');
 
     const handleClick = (button) => {
         setActiveButton(button);
+
+        onToggle(button === 'right');
     };
 
     return (

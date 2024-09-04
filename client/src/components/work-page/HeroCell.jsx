@@ -39,8 +39,9 @@ function HeroCell() {
     return (
         <motion.div
             className='HeroCell'
-            initial={{ opacity: 0, y: 50 }}  // Start hidden and below the natural position
+            // initial={{ opacity: 0, y: 50 }}  // Start hidden and below the natural position
             whileInView={{ opacity: 1, y: 0 }}  // Animate to full opacity and move to the natural position
+            // transition={{ duration }}
             transition={{ duration: 0.6, ease: "easeOut" }}  // Smooth easing for the entire cell
             viewport={{ once: false, amount: 0.5 }}  // Re-trigger animation every time the component comes into view
         >

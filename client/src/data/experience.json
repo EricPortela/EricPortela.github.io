@@ -2,13 +2,17 @@
     {
         "title": "Thesis Worker",
 
-        "logo_path": "Assets/ikea_logo.svg",
+        "location": "Malmö",
+
+        "logoName": "ikea_logo.svg",
 
         "website": "https://jobs.ikea.com/en",
 
         "company": "Ingka Group / IKEA",
 
-        "period": "Jan 2024 - present",
+        "team": "Customer Order 360",
+
+        "period": "Jan 2024 - June 2024",
 
         "description": "• Currently writing my thesis work at IKEA within Machine Learning and Al- Driven Predictive Event Orchestration for Scalable Data Pipelines at the Customer Order 360 team.",
 
@@ -16,15 +20,40 @@
     },
 
     {
-        "title": "Mobile Engineering Intern (iOS)",
 
-        "logo_path": "Assets/spotify_logo.svg",
+        "title": "Course Assistant",
+
+        "location": "Helsingborg",
+
+        "logoName": "spotify_logo.svg",
+
+        "website": "https://lifeatspotify.com",
+
+        "company": "Lund University (LTH)",
+
+        "team": "Faculty of Engineering • Dept. of Computer Science",
+
+        "period": "June 2023 - Sep 2023",
+
+        "description": "• CA in the courses Programming in Java (EDAA10) and Programming in Java, second course (EDAA30) at LTH\n\n• Supported students and verified solutions\n\n• The latter course focuses on constructing changeable and resource effective programs by using concepts such as data abstraction",
+
+        "tags": ["", "", "", "", "", ""]
+    },
+
+    {
+        "title": "Mobile Engineer Intern (iOS)",
+
+        "location": "[Remote] Stockholm / EMEA",
+
+        "logoName": "spotify_logo.svg",
 
         "website": "https://lifeatspotify.com",
 
         "company": "Spotify",
 
-        "period": "June 2023 - August 2023",
+        "team": "Scrabble Squad",
+
+        "period": "June 2023 - Sep 2023",
 
         "description": "• Worked with every day tasks on the iOS-client of Spotify, specifically the unlaunched Audiobooks page (launch 3rd October on several markets). \n\n• My work included bug fixes and introducing new features, lifting data to the model layer and displaying it in the app. \n\n• Other tasks also included unit tests and UI tests. We worked agile, primarily using Jira, standups everyday and retros after each sprint. \n\n• Swift, UIKit, SwiftUI, Git, Bazel, protocol oriented programming.",
 
@@ -34,7 +63,9 @@
     {
         "title": "Web Development Intern",
 
-        "logo_path": "Assets/med_logo.svg",
+        "location": "Lund",
+
+        "logoName": "med_logo.svg",
 
         "website": "https://www.medicine.lu.se",
 
@@ -50,15 +81,19 @@
     {
         "title": "Teaching Assistant",
 
-        "logo_path": "Assets/lth_logo.svg",
+        "location": "Helsingborg",
+
+        "logoName": "lth_logo.svg",
 
         "website": "https://www.lunduniversity.lu.se/lucat/group/v1000234",
 
-        "company": "Faculty of Engineering | Dept. of Computer Science",
+        "company": "Lund University (LTH)",
 
-        "period": "Sep. 2022 - Dec. 2022",
+        "team": "Faculty of Engineering • Dept. of Computer Science",
 
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos",
+        "period": "Sep 2022 - Dec 2022",
+
+        "description": "• TA in the course Programing in Java (EDAA10) at LTH.\n\n•Primarily supporting students in their laboratory work, verifying their solutions and home assignments.\n\n• Course focuses on the basics of object-oriented programming, fundamental data structures, search algorithms (e.g. insertion and selection sort), and more.\n\n• Course manager: Nazila Hasanzade (nazila.hasanzade@cs.lth.se)",
 
         "tags": ["", "", "", "", "", ""]
     },
@@ -66,15 +101,19 @@
     {
         "title": "In-house Substitute Teacher",
 
-        "logo_path": "Assets/ies_logo.svg",
+        "location": "Lund",
+
+        "logoName": "ies_logo.svg",
 
         "website": "https://engelska.se",
 
         "company": "Internationella Engelska Skolan",
 
-        "period": "m yyyy - m yyyy",
+        "team": null,
 
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos",
+        "period": "Feb 2019 - June 2021",
+
+        "description": "• Substitute teacher in several subjects, from grade 4-9.\n\n• Long-term substitute in mathematics for two classes each in 4th and 6th grade, during the last 6 months.",
 
         "tags": ["", "", "", "", "", ""]
     },
@@ -82,15 +121,19 @@
     {
         "title": "Quantitative Analyst",
 
-        "logo_path": "Assets/linc_logo.svg",
+        "location": "Lund",
+
+        "logoName": "linc_logo.svg",
 
         "website": "https://linclund.com",
 
         "company": "LINC - Lund University Finance Society",
 
-        "period": "m yyyy - m yyyy",
+        "team": "Trading & Quantitative research",
 
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos",
+        "period": "Feb 2020 - Sep 2020",
+
+        "description": "• Involved in a project through the student-driven organisation LINC. \n\n• Project assigned by a Swedish Currency Fund in order to analyse the reversal chart patterns double tops and double bottoms.\n\n• Designed and programmed an algorithm in Python, detecting reversal chart patterns in currency-pairs (EUR/USD) and traded these based on predetermined strategies using historical data.\n\n• The strategies’ results were analysed and a project report was written.",
 
         "tags": ["", "", "", "", "", ""]
     }

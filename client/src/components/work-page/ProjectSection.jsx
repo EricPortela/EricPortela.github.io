@@ -1,6 +1,7 @@
 import ProjectCell from './ProjectCell';
 import ProjectData from '../../data/projects.json'
-import './ProjectCells.scss'
+import './ProjectSection.scss'
+import '../text-styling/text-styling.scss'
 import {
     motion
   } from "framer-motion";
@@ -8,8 +9,8 @@ import {
 function ProjectCells() {
 
     return ( 
-        <div className='ProjectCells'>
-            <p>My Projects</p>
+        <div className='ProjectSection'>
+            <p className='heading-2'>My Projects</p>
             {ProjectData.map((item, index) => (
                 // <ProjectCell project={item} />
 

@@ -20,7 +20,7 @@ function ProjectCell({project}) {
             </div>
 
             <div className="image-div">
-                <img src={require("../../assets/" + project?.imgSource)} alt={project?.imgSource} />
+                <img src={require("../../assets/" + project?.imgName)} alt={project?.imgName} />
             </div>
         </div>
      );

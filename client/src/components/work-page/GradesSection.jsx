@@ -7,7 +7,6 @@ function GradeSection(params) {
     return (
         <div className='GradesSection'>
             <p className='heading-2'>Grades</p>
-            <p>FUCK YOU</p>
         </div>
     );
 }

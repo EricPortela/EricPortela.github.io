@@ -1,0 +1,27 @@
+.WorkPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  padding: 0 5vw;
+}
+.WorkPage .Toggle {
+  z-index: 99;
+}
+.WorkPage .background-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  z-index: -99;
+  position: fixed;
+}
+.WorkPage .background-container .background-blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50%;
+  opacity: 60%;
+}/*# sourceMappingURL=WorkPage.css.map */

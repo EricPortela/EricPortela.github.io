@@ -1,0 +1,31 @@
+.Toggle {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  justify-content: center;
+  width: 100vw;
+  height: 6vh;
+}
+.Toggle .right, .Toggle .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D8D8D8;
+  color: black;
+  width: 10%;
+  border-radius: 25px;
+  transition: 0.3s;
+  border: none;
+}
+.Toggle .left:hover, .Toggle .right:hover {
+  border: solid 2px black;
+}
+.Toggle .active {
+  background-color: black;
+  color: white;
+}
+.Toggle .inactive {
+  background-color: #D8D8D8;
+  color: black;
+}/*# sourceMappingURL=Toggle.css.map */

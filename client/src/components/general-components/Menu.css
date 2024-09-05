@@ -1,0 +1,29 @@
+.Menu {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  flex-direction: row;
+  padding-top: 3vh;
+}
+.Menu .left-div {
+  font-family: "PingFang HK";
+  font-weight: normal;
+  font-size: 2em;
+  display: flex;
+  width: 50%;
+  justify-content: left;
+  align-items: center;
+  color: #2C2C2C;
+}
+.Menu .right-div {
+  font-family: "PingFang HK";
+  font-weight: lighter;
+  font-size: larger;
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  align-items: center;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
+  color: #7C7C7C;
+}/*# sourceMappingURL=Menu.css.map */

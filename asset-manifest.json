@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.69c86ae7.css",
-    "main.js": "/static/js/main.b0dc5f24.js",
+    "main.css": "/static/css/main.be9e4fe1.css",
+    "main.js": "/static/js/main.40784fc4.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/fonddata-mockup.svg": "/static/media/fonddata-mockup.18f4b2c2f1b01e8f0478.svg",
     "static/media/finalytica-mockup.svg": "/static/media/finalytica-mockup.467d85d3a7e371b8ffe6.svg",
     "static/media/java-logo.svg": "/static/media/java-logo.93d8ae7316fe664d9574.svg",
     "static/media/skylten-mockup.svg": "/static/media/skylten-mockup.c18c570abd5129a06e72.svg",
+    "static/media/eric-portela.png": "/static/media/eric-portela.f83a1264eb8b75c95454.png",
     "static/media/fonddata-mockup.png": "/static/media/fonddata-mockup.9ec7b50c53ec5e473210.png",
     "static/media/lth_logo.svg": "/static/media/lth_logo.b7790f240f65cdf380f7.svg",
     "static/media/memoji_hello.svg": "/static/media/memoji_hello.a178d7548f1da3ef802f8b9ba18e10a3.svg",
@@ -22,12 +23,12 @@
     "static/media/spotify_logo.svg": "/static/media/spotify_logo.1f440583ab734d3f7bb0.svg",
     "static/media/mysql-logo.svg": "/static/media/mysql-logo.5dbd7ffb56a921cecde4.svg",
     "index.html": "/index.html",
-    "main.69c86ae7.css.map": "/static/css/main.69c86ae7.css.map",
-    "main.b0dc5f24.js.map": "/static/js/main.b0dc5f24.js.map",
+    "main.be9e4fe1.css.map": "/static/css/main.be9e4fe1.css.map",
+    "main.40784fc4.js.map": "/static/js/main.40784fc4.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69c86ae7.css",
-    "static/js/main.b0dc5f24.js"
+    "static/css/main.be9e4fe1.css",
+    "static/js/main.40784fc4.js"
   ]
 }

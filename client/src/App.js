@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />
       <Routes>
-        <Route path="/" element={<Work />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/other" element={<Other />} />
       </Routes>

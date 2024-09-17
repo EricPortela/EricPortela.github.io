@@ -1,5 +1,8 @@
 # My Website
 
+Dependencies
+- https://stephane-monnot.github.io/react-vertical-timeline/#/
+
 
 <p align="center"> 
      <a href="https://ericportela.github.io/#">

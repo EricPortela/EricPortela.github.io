@@ -1,7 +1,7 @@
-import ProjectCell from './ProjectCell';
-import ProjectData from '../../data/projects.json'
+import ProjectCell from './project-cell/ProjectCell';
+import ProjectData from '../../../data/projects.json'
 import './ProjectSection.scss'
-import '../text-styling/text-styling.scss'
+import '../../text-styling/text-styling.scss'
 import {
     motion
   } from "framer-motion";

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
-import './HeroCell.scss';
+import './HeroSection.scss';
 import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/memoji_hello.svg';
 import Lottie from 'react-lottie';
 import animationData from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/scroll-down.json';
@@ -111,7 +111,7 @@ function HeroCell() {
             <div className='middle-section'>
                     {technologies.map((item, index) => (
                         <div className="image-div">
-                            <img src={require("../../assets/" + item)} alt={item} width={100} height={'auto'}
+                            <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}
                             />
                         </div>
                     ))}

@@ -1,14 +1,15 @@
 import './App.scss';
-import WorkPage from './pages/WorkPage';
 
 import {
   motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue
+  useScroll
 } from "framer-motion";
 
+import { Routes, BrowserRouter, Route } from 'react-router-dom';
+
+import AboutMe from './pages/AboutMePage/AboutMePage.jsx';
+import Work from './pages/WorkPage/WorkPage.jsx';
+import Other from './pages/OtherPage/OtherPage.jsx';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -17,8 +18,14 @@ function App() {
 
   return (
     <div className="App">
-      <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />  
-      <WorkPage></WorkPage>
+      <BrowserRouter>
+        <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />
+          <Routes>
+              <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/other" element={<Other />} />
+          </Routes>
+      </BrowserRouter>
     </div>
   );
 }

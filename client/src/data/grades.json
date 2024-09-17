@@ -5,7 +5,7 @@
 
         "course_code": "FMAA50",
 
-        "credits": 15,
+        "credits": 13.5,
 
         "grade_distribution": [45, 160, 323],
 
@@ -43,7 +43,7 @@
     },
 
     {
-        "course": "Control Systems",
+        "course": "Automatic Control",
 
         "course_code": "EIEF30",
 
@@ -92,6 +92,20 @@
         "credits": 7.5,
 
         "grade_distribution": [36, 81, 157],
+
+        "grade": 4,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Requirements Engineering",
+
+        "course_code": "n/a",
+
+        "credits": 7.5,
+
+        "grade_distribution": [14, 99, 101],
 
         "grade": 4,
         

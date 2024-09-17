@@ -1,0 +1,51 @@
+.GradesSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.GradesSection .heading-2 {
+  font-family: "PingFang HK";
+  font-weight: normal;
+  font-size: 2em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.GradesSection .my_grades {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  align-items: flex-start; /* Align items to the start */
+  padding-bottom: 2vh;
+}
+.GradesSection .my_grades .grade_cell {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 20vw;
+  border-radius: 20px;
+  margin-right: 2vw;
+  padding: 2vw 2vw 2vw 2vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.GradesSection .my_grades .grade_cell p {
+  display: flex;
+  font-size: 2vh;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+.GradesSection .my_grades .grade_cell #subtitle_1 {
+  font-style: italic;
+}
+.GradesSection .my_grades .grade_cell #title {
+  font-size: large;
+  font-weight: bold;
+}
+.GradesSection .my_grades .grade_cell .chart {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}/*# sourceMappingURL=GradesSection.css.map */

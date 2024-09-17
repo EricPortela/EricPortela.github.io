@@ -53,6 +53,9 @@
   width: 60%;
 }
 .ProjectCell .image-div img {
+  max-width: 100%;
   width: 100%;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=ProjectCell.css.map */

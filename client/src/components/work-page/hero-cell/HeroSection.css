@@ -1,0 +1,101 @@
+.HeroCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vh;
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  position: relative;
+  transition: all 0.3s;
+}
+.HeroCell .upper-section {
+  display: flex;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.HeroCell .upper-section .left-div {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  padding-right: 2%;
+  margin: 5%;
+}
+.HeroCell .upper-section .left-div .image-me {
+  width: 85%;
+  height: auto;
+  margin: 0;
+  padding: 5%;
+}
+.HeroCell .upper-section .right-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  padding: 1vw;
+  padding-left: 2%;
+}
+.HeroCell .upper-section .right-div .greeting {
+  font-family: "PingFang HK";
+  font-weight: lighter;
+  font-size: 2em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.HeroCell .upper-section .right-div .title {
+  font-family: "PingFang HK";
+  font-weight: bold;
+  font-size: 2.2em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+.HeroCell .upper-section .right-div .about {
+  font-family: "PingFang HK";
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.HeroCell .middle-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
+  padding-top: 3vh;
+}
+.HeroCell .middle-section .image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px lightgray;
+}
+.HeroCell .middle-section .image-div img {
+  height: 60%;
+  width: auto;
+}
+.HeroCell .lottie-animation {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+}/*# sourceMappingURL=HeroSection.css.map */

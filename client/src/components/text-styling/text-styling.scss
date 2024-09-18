@@ -1,8 +1,24 @@
-.heading-1 {
-    
+%heading-1 {
+    font-family: 'PingFang HK';
+    font-weight: bold;
+    font-size: 2.1em;
+    color: #7C7C7C;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    text-align: left;
 }
 
-.heading-2 {
+%normal-text {
+    font-family: 'PingFang HK';
+    font-weight: lighter;
+    font-size: 1.3em;
+    color: #7C7C7C;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.section-header {
     font-family: 'PingFang HK';
     font-weight: normal;
     font-size: 2em;
@@ -10,4 +26,5 @@
     padding: 0;
     margin: 0;
     text-align: left;
+
 }

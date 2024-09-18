@@ -1,3 +1,19 @@
+@import '../../text-styling/text-styling.scss';
+
+%cell-layout {
+    display: flex;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    // padding: 0.5%;
+}
+
+
 .HeroCell {
     display: flex;
     flex-direction: column;
@@ -5,28 +21,17 @@
     row-gap: 5vh;
 
     width: 100%;
-    // height: 77vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
 
     position: relative;
-    // background: linear-gradient(180deg, lightgray, white);
-    // background-color: red;
 
     transition: all 0.3s;
-
     
 
     .upper-section {
-        display: flex;
-
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        @extend %cell-layout;
+        padding: 1%;
 
         .left-div {
             display: flex;
@@ -40,10 +45,18 @@
             margin: 5%;
             
             .image-me {
-                width: 85%;
+                width: 100%;
                 height: auto;
                 margin: 0;
-                padding: 5%;
+                border: solid 2px black;
+                padding: 10%;
+
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
             }
         }
     
@@ -57,12 +70,11 @@
             padding: 1vw;
             padding-left: 2%;
     
-            // background-color: blue;
     
             .greeting {
                 font-family: 'PingFang HK';
                 font-weight: lighter;
-                font-size: 2em;
+                font-size: 2.2em;
                 color: #7C7C7C;
                 padding: 0;
                 margin: 0;
@@ -70,23 +82,19 @@
             }
     
             .title {
-                font-family: 'PingFang HK';
-                font-weight: bold;
-                font-size: 2.2em;
-                color: #7C7C7C;
-                padding: 0;
-                margin: 10px 0 10px 0;
-                text-align: left;
+                @extend %heading-1;
+
+                .completed-goal-faded {
+                    color: rgba(0, 0, 0, 0.2);
+                }
             }
     
             .about {
-                font-family: 'PingFang HK';
-                font-weight: lighter;
-                font-size: 1.3em;
-                color: #7C7C7C;
-                padding: 0;
-                margin: 0;
-                text-align: left;
+                @extend %normal-text;
+
+                .key-word {
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -94,29 +102,90 @@
     .middle-section {
         display: flex;
         width: 100%;
+        flex-direction: column;
 
         justify-content: center;
         align-items: center;
         column-gap: 5vw;
-        padding-top: 3vh;
+        padding-top: 1vh;
+
+        row-gap: 5vh;
 
         // background-color: red;
 
-        .image-div {
+        .contact-me {
             display: flex;
-            align-items: center;
+            width: 100%;
+            height: 10vh;
+            justify-content: space-around;
+            // background-color: red;
+
+            .contact-cell {
+                @extend %cell-layout;
+                background-color: black;
+                align-items: center;
+                justify-content: center;
+                width: 25%;
+                color: white;
+            }
+        }
+
+        .technologies-header {
+            @extend %cell-layout;
+            flex-direction: column;
+            width: 100%;
             justify-content: center;
+            align-items: center;
+            padding: 1%;
 
-            height: 12vh;
-            width: 12vh;
-            border-radius: 50%;
+            .title {
+                font-family: 'PingFang HK';
+                font-weight: bold;
+                font-size: 2em;
+                color: #7C7C7C;
+                padding: 0;
+                margin: 10px 0 10px 0;
+                text-align: center;
+            }
 
-            background-color: white;
-            box-shadow: 5px 5px 5px 5px lightgray;
+            .subtitle {
+                display: flex;
+                width: 70%;
+                font-family: 'PingFang HK';
+                font-weight: lighter;
+                font-size: 1.3em;
+                color: #7C7C7C;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
 
-            img {
-                height: 60%;
-                width: auto;
+        .technologies {
+            display: flex;
+            width: 100%;
+
+            justify-content: center;
+            align-items: center;
+            column-gap: 5vw;
+            padding-top: 3vh;
+
+            .image-div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                height: 12vh;
+                width: 12vh;
+                border-radius: 50%;
+    
+                background-color: white;
+                box-shadow: 5px 5px 5px 5px lightgray;
+    
+                img {
+                    height: 60%;
+                    width: auto;
+                }
             }
         }
     }

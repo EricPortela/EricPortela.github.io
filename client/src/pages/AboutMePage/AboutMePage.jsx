@@ -14,6 +14,12 @@ function AboutMePage() {
   return (
     <div className="AboutMePage">
       <Menu></Menu>
+      <div className='div-1'>
+        <h1>HEJ</h1>
+      </div>
+      <div className='div-2'>
+        
+      </div>
       <SpeedDial></SpeedDial>
     </div>
   );

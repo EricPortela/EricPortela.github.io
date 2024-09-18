@@ -36,26 +36,42 @@ function GradeSection(params) {
     return (
         
         <div className='GradesSection'>
-            <p className='heading-2'>Grades</p>
-            <div className='my_grades'>
-            {/* {GradesData.map((gradeObj) => console.log(gradeObj.grade_distribution.filter(grade => grade > 0)))} */}
-                {GradesData.map((grade, index) => (
-                <div className="grade_cell" id={index}>
-                    <p id="title">{grade.course_code} - {grade.course}</p>
-                    <RadarChart 
-                        key={index} 
-                        id={"chart-"+index} 
-                        className="chart" 
-                        chartData={{
-                            labels: chartData.labels,  // Pass consistent labels
-                            datasets: [chartData.datasets[index]]  // Pass the specific dataset for this grade
-                        }} 
-                        idx={index}>
-                    </RadarChart>
-                    <p id="subtitle_1">ECTS Credits {grade.credits} • Grade: {grade.grade}</p>
+            <div className='GradesHorizontalScroll'>
+                <p className='section-header'>Grades</p>
+                <div className='my_grades'>
+                    {GradesData.map((grade, index) => (
+                        <div className="grade_cell" id={index}>
+                            <p id="title">{grade.course_code} - {grade.course}</p>
+                            <RadarChart 
+                                key={index} 
+                                id={"chart-"+index} 
+                                className="chart" 
+                                chartData={{
+                                    labels: chartData.labels,  // Pass consistent labels
+                                    datasets: [chartData.datasets[index]]  // Pass the specific dataset for this grade
+                                }} 
+                                idx={index}>
+                            </RadarChart>
+                            <p id="subtitle_1">ECTS Credits {grade.credits} • Grade: {grade.grade}</p>
+                        </div>
+                    ))}
                 </div>
-                ))}
             </div>
+
+            <p className="disclaimer">
+                ***
+                <br></br>
+                <br></br>
+                Disclaimer: 
+                <em> A grading table is shown for courses where the same grading has been used during at least two years </em>
+                <a href="https://www.student.ladok.se/student/app/studentwebb/start" target="_blank">(Ladok)</a>.
+                <br></br>
+                <br></br>
+                Interpreting this, the distrubution data (above) is tracked during a period of at least <span className="bold-text">two years.</span>
+                <br></br>
+                <br></br>
+                ***
+            </p>
         </div>
     );
     

@@ -10,7 +10,7 @@ function ProjectCells() {
 
     return ( 
         <div className='ProjectSection'>
-            <p className='heading-2'>My Projects</p>
+            <p className='section-header'>My Projects</p>
             {ProjectData.map((item, index) => (
                 // <ProjectCell project={item} />
 

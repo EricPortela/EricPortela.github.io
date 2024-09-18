@@ -1,26 +1,78 @@
-# My Website
+<div style="padding: 20px">
 
-Dependencies
-- https://stephane-monnot.github.io/react-vertical-timeline/#/
+# My Website Portfolio
 
+Welcome to my showcasing/portfolio website. This project was developed as a side project during my Computer Science studies at Lund University (LTH). You can view my work, experiences, and other portfolio items by visiting the live version of the site hosted on GitHub Pages.
+
+## 🚀 Live Demo
+
+[https://ericportela.github.io/#](https://ericportela.github.io/#)
+
+## 📂 Project Structure
+
+The project is structured as follows:
+- **Client Folder**: Contains the source code for the React-based frontend.
+- **Dependencies**: Utilizes various libraries including [React Vertical Timeline](https://stephane-monnot.github.io/react-vertical-timeline/#/).
+
+## 🛠️ Installation & Setup
+
+To download and run this project locally, follow these steps:
+
+### Prerequisites
+Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (version 14.x or higher)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
+```
+
+### 2. Navigate to the client folder
+
+```bash
+cd EricPortela.github.io/client
+```
+
+### 3. Install dependencies
+
+```bash
+cd EricPortela.github.io/client
+```
+
+### 4. Run the project
+
+```bash
+npm start run
+```
+
+### 5. Access the website (landing page)
+
+```bash
+http://localhost:3000/#/work
+```
+
+## 🧰 Dependencies
+
+This project makes use of the following libraries:
+
+- React Vertical Timeline
+- (Add any other dependencies or notable libraries here)
+
+## 📸 Mockup
 
 <p align="center"> 
-     <a href="https://ericportela.github.io/#">
-          <img src="https://user-images.githubusercontent.com/58792679/173256744-c32c730d-42dd-48ca-b2c2-24243586ada7.svg" width="200">
-     </a>
+     <img src="https://github.com/user-attachments/assets/6c3d8617-32cc-411a-9c20-db7785399c1a" width="800">
      <br>
-     <br>
-     <a> My showcasing/portfolio website. Made as a project besides studies in Computer Science at LTH (by Eric Portela). Click the logo or the link down below, to access my webpage (GitHub Pages). </a>
-     <br>
-     <br>
-     <a href="https://ericportela.github.io/#" target="_blank"> https://ericportela.github.io/# </a>
+     <i> *Mockup made in Sketch, similar to actual output*</i>
+</p>
 
-     
-</p>
-     
-# 
-<p align="center"> 
-     <img src="https://user-images.githubusercontent.com/58792679/173257321-24231f5c-c497-4297-8242-935bd68a146c.png" width="800">
-     <br>
-     <a> *Mockup made in Sketch, similar to actual output*</a>
-</p>
+---
+
+## 👨‍💻 Author
+
+Eric Portela
+
+[GitHub](https://github.com/EricPortela) | [LinkedIn](https://www.linkedin.com/in/ericportela/) | [Portfolio](https://ericportela.github.io/#/work)
+
+</div>

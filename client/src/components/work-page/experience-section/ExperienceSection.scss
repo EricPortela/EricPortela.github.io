@@ -9,7 +9,7 @@
 
         // Set the desired values on the custom props for the timeline component
         &:before {
-            background-color: lightgray; /* Set your desired line color */
+            background-color: black; /* Set your desired line color */
         }
 
         .vertical-timeline-element {
@@ -47,12 +47,20 @@
         }
 
         .vertical-timeline-element-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            box-shadow: none;
 
-            background-color: lightgray;
 
+            img {
+                padding: 0;
+                margin: 0;
+                width: 85%;
+                height: auto;
+                color: black;
+            }
         }        
-    }
-
-
-    
+    }    
 }

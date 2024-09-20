@@ -13,6 +13,14 @@
     // padding: 0.5%;
 }
 
+%remove-link-formatting {
+    // Removes the disgusting underline and color on the link
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
 
 .HeroCell {
     display: flex;
@@ -26,8 +34,7 @@
 
     position: relative;
 
-    transition: all 0.3s;
-    
+    transition: all 0.3s;    
 
     .upper-section {
         @extend %cell-layout;
@@ -91,10 +98,6 @@
     
             .about {
                 @extend %normal-text;
-
-                .key-word {
-                    font-weight: bold;
-                }
             }
         }
     }
@@ -130,13 +133,85 @@
             }
         }
 
-        .technologies-header {
+        .big-cell-1 {
+            display: flex;
+            width: 100%;
+            column-gap: 2%;
+            // align-items: center;
+            justify-content: center;
+
+            %template-half-cell {
+                @extend %cell-layout;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                row-gap: 0;
+                column-gap: 0;
+                width: 44%;
+                padding: 5%;
+
+                @extend %heading-1;
+                text-align: center;
+
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .left {
+                @extend %template-half-cell;
+                @extend %remove-link-formatting;
+
+                .thesis-cover {
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .right {
+                @extend %template-half-cell;
+                justify-content: flex-start;
+                align-items: center;
+
+                ul {
+                    // Remove the bullet point
+                    list-style: none;
+                    margin-left: 0;
+                    padding-left: 1em;
+
+                    // Insert a '-' instead of bullet point
+                    li:before {
+                        display: inline-block;
+                        content: "-";
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+
+                    li {
+                        @extend %normal-text;
+                        font-size: 20px;
+                        margin-top: 5%;
+
+                        @extend %remove-link-formatting;
+                    }
+                }
+            }
+        }
+
+        .big-cell-2 {
             @extend %cell-layout;
             flex-direction: column;
             width: 100%;
             justify-content: center;
             align-items: center;
             padding: 1%;
+
+            .thesis-cover {
+                border: solid 2px black;
+            }
 
             .title {
                 font-family: 'PingFang HK';
@@ -149,10 +224,9 @@
             }
 
             .subtitle {
-                display: flex;
                 width: 70%;
                 font-family: 'PingFang HK';
-                font-weight: lighter;
+                font-weight: normal;
                 font-size: 1.3em;
                 color: #7C7C7C;
                 padding: 0;

@@ -18,7 +18,7 @@ function ExperienceSection() {
                     <VerticalTimelineElement 
                         className="vertical-timeline-element"
                         date={item?.period}
-                        // icon={<img src={require("../../assets/" + item?.imgName)} alt={item?.imgName} />} 
+                        icon={<img src={require("../../../assets/" + item?.logoName)} alt={item?.logoName} />} 
                     >
                         <div>
 

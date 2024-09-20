@@ -1,3 +1,5 @@
+@import '../../components/text-styling/text-styling.scss';
+
 .AboutMePage {
     display: flex;
     flex-direction: column;
@@ -8,4 +10,20 @@
     // background-color: red;
     
     row-gap: 5vh;
+
+    .div-1 {
+        width: 70%;
+
+        p {
+            @extend %normal-text;
+            font-weight: normal;
+            color: black;
+        }
+
+        .signature {
+            @extend %heading-1;
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
 }

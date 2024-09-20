@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.80fd4697.css",
-    "main.js": "/static/js/main.ca2c2cff.js",
+    "main.css": "/static/css/main.29a6edcc.css",
+    "main.js": "/static/js/main.5395cefc.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
+    "static/media/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf": "/static/media/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.bf0daae2cad6f9d79d5a.pdf",
     "static/media/fonddata-mockup.svg": "/static/media/fonddata-mockup.18f4b2c2f1b01e8f0478.svg",
     "static/media/finalytica-mockup.svg": "/static/media/finalytica-mockup.467d85d3a7e371b8ffe6.svg",
     "static/media/java-logo.svg": "/static/media/java-logo.93d8ae7316fe664d9574.svg",
@@ -17,18 +18,19 @@
     "static/media/ikea_logo.svg": "/static/media/ikea_logo.5d5273a773f111d98992.svg",
     "static/media/css-logo.svg": "/static/media/css-logo.4d347b8a5b3332f50959.svg",
     "static/media/python-logo.svg": "/static/media/python-logo.b52f2e80772af9396559.svg",
+    "static/media/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.png": "/static/media/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.6177eac3bc6e4c3305e6.png",
     "static/media/js-logo.svg": "/static/media/js-logo.2a1fe4cada9df729c45e.svg",
     "static/media/linc_logo.svg": "/static/media/linc_logo.ab16dd084be8fab9c346.svg",
     "static/media/swift-logo.svg": "/static/media/swift-logo.32f9707cefab60f9e6d1.svg",
     "static/media/mysql-logo.svg": "/static/media/mysql-logo.5dbd7ffb56a921cecde4.svg",
     "static/media/spotify_logo.svg": "/static/media/spotify_logo.d38b37600ee55044c96e.svg",
     "index.html": "/index.html",
-    "main.80fd4697.css.map": "/static/css/main.80fd4697.css.map",
-    "main.ca2c2cff.js.map": "/static/js/main.ca2c2cff.js.map",
+    "main.29a6edcc.css.map": "/static/css/main.29a6edcc.css.map",
+    "main.5395cefc.js.map": "/static/js/main.5395cefc.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80fd4697.css",
-    "static/js/main.ca2c2cff.js"
+    "static/css/main.29a6edcc.css",
+    "static/js/main.5395cefc.js"
   ]
 }

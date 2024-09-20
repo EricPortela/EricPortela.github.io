@@ -182,6 +182,14 @@ function HeroCell() {
                     <p className='subtitle'>My projects usually start at the creative side of the development, namely UI Design in Sketch. Thereafter only my imagination sets the limit...</p>
                 </div>
 
+                <div className='technologies'>
+                    {technologies.map((item, index) => (
+                        <div className="image-div">
+                            <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}
+                            />
+                        </div>
+                    ))}
+                </div>
                 
             </div>
 

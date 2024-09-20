@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.72df55ce.css",
-    "main.js": "/static/js/main.d79a0abb.js",
+    "main.js": "/static/js/main.dfadd2dd.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf": "/static/media/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.bf0daae2cad6f9d79d5a.pdf",
     "static/media/fonddata-mockup.svg": "/static/media/fonddata-mockup.18f4b2c2f1b01e8f0478.svg",
@@ -27,11 +27,11 @@
     "static/media/spotify_logo.svg": "/static/media/spotify_logo.d38b37600ee55044c96e.svg",
     "index.html": "/index.html",
     "main.72df55ce.css.map": "/static/css/main.72df55ce.css.map",
-    "main.d79a0abb.js.map": "/static/js/main.d79a0abb.js.map",
+    "main.dfadd2dd.js.map": "/static/js/main.dfadd2dd.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72df55ce.css",
-    "static/js/main.d79a0abb.js"
+    "static/js/main.dfadd2dd.js"
   ]
 }

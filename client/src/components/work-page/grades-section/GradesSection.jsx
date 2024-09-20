@@ -3,6 +3,7 @@ import './GradesSection.scss'
 import GradesData from '../../../data/grades.json'
 import RadarChart from './RadarChart'
 import { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
 
 
 function GradeSection(params) {
@@ -35,7 +36,18 @@ function GradeSection(params) {
 
     return (
         
-        <div className='GradesSection'>
+        <motion.div 
+            className='GradesSection'
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 10,
+                delay: 0.3  // Delay to allow the container to animate first
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+        >
             <div className='GradesHorizontalScroll'>
                 <p className='section-header'>Grades</p>
                 <div className='my_grades'>
@@ -72,7 +84,7 @@ function GradeSection(params) {
                 <br></br>
                 ***
             </p>
-        </div>
+        </motion.div>
     );
     
 }

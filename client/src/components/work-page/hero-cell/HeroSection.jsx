@@ -8,6 +8,7 @@ import animationData2 from '/Users/ericportela/Documents/GitHub/EricPortelaWebsi
 import ThesisCover from '../../../assets/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.png';
 import Thesis from '../../../assets/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf';
 import '../../text-styling/text-styling.scss'
+import Resume from '../../../assets/cv-eric-portela-2024.pdf'
 
 
 function HeroCell() {
@@ -114,9 +115,21 @@ function HeroCell() {
 
             <div className='middle-section'>
                 <div className='contact-me'>
-                    <div className='contact-cell'>Resume/CV</div>
-                    <div className='contact-cell'>GitHub</div>
-                    <div className='contact-cell'>LinkedIn</div>
+                    <div className='contact-cell'>
+                        <a href={Resume} target='_blank'>
+                            Resume/CV 🖇️
+                        </a>
+                    </div>
+                    <div className='contact-cell'>
+                        <a href='https://github.com/EricPortela' target='_blank'>
+                            GitHub 🔗
+                        </a>
+                    </div>
+                    <div className='contact-cell'>
+                        <a href='https://www.linkedin.com/in/ericportela/' target='_blank'>
+                            LinkedIn 🔗
+                        </a>
+                    </div>
                 </div>
                 
 
@@ -169,14 +182,7 @@ function HeroCell() {
                     <p className='subtitle'>My projects usually start at the creative side of the development, namely UI Design in Sketch. Thereafter only my imagination sets the limit...</p>
                 </div>
 
-                <div className='technologies'>
-                    {technologies.map((item, index) => (
-                        <div className="image-div">
-                            <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}
-                            />
-                        </div>
-                    ))}
-                </div>
+                
             </div>
 
             {/* <div className={'lottie-animation'}>

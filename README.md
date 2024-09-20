@@ -6,7 +6,7 @@ Welcome to my showcasing/portfolio website. This project was developed as a side
 
 ## 🚀 Live Demo
 
-[https://ericportela.github.io/#](https://ericportela.github.io/#)
+[https://ericportela.github.io/#/work](https://ericportela.github.io/#/work)
 
 ## 📂 Project Structure
 
@@ -57,7 +57,7 @@ http://localhost:3000/#/work
 This project makes use of the following libraries:
 
 - React Vertical Timeline
-- (Add any other dependencies or notable libraries here)
+- 
 
 ## 📸 Mockup
 

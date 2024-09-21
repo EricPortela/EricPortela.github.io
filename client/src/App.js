@@ -18,12 +18,17 @@ function App() {
 
   return (
     <div className="App">
-      <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />
-      <Routes>
-        <Route path="/work" element={<Work />} />
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/other" element={<Other />} />
-      </Routes>
+      <h1 className='alert'>
+        I'm currently developing the site for mobile view. Please check out the dekstop version in the meantime :D
+      </h1>
+      <div className='content'>
+        <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />
+        <Routes>
+          <Route path="/work" element={<Work />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/other" element={<Other />} />
+        </Routes>
+      </div>
     </div>
   );
 }

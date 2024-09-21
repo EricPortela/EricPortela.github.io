@@ -172,7 +172,7 @@ function HeroCell() {
                                 <a href='https://www.cloudskillsboost.google/paths/11' target='_blank'>
                                     Started Google Cloud Engineering path 🔗
                                     <br></br>
-                                    [Sept. 20th 2024 - ?]
+                                    [Sept. 20th 2024 - present]
                                 </a>
                             </li>
                             
@@ -180,7 +180,7 @@ function HeroCell() {
                                 <a href='https://www.control.lth.se/education/engineering-program/frtn65-modeling-and-learning-from-data/' target='_blank'>
                                     Machine Learning course in my Master studies 🔗 
                                     <br></br>
-                                    [FRTN65, Modelling & learning from Data] 
+                                    [FRTN65, Modelling & learning from data] 
                                     <br></br>
                                     [Sept. 2nd 2024 - Jan. 19th 2025]
                                 </a>
@@ -190,7 +190,7 @@ function HeroCell() {
                                 <a >
                                     Building a screening tool for mutual funds
                                     <br></br>
-                                    [Sept. 1st 2024 - ?]
+                                    [Sept. 1st 2024 - present]
                                 </a>
                             </li>
                         </ul>

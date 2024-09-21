@@ -35,7 +35,7 @@ function AboutMePage() {
               relational databases
             </li>
             <li>
-              REST-API's
+              RESTful API's
             </li>
             <li>
               and Machine Learning

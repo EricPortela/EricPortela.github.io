@@ -4,6 +4,10 @@
   align-items: center;
   width: 100%;
   // background-color: red;
+
+  .alert {
+    display: none;
+  }
   
   // Make the Speed Dial floating at the bottom
   .Box {
@@ -27,4 +31,21 @@
     width: 100%;
   }
 
+}
+
+
+@media only screen and (max-width:1435px) {
+  .App {
+
+    .content {
+      display: none !important;
+    }
+
+    .alert {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+    }
+  }    
 }

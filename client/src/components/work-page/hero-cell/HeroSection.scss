@@ -38,7 +38,7 @@
 
     .upper-section {
         @extend %cell-layout;
-        padding: 1%;
+        padding: 1em;
 
         .left-div {
             display: flex;
@@ -216,11 +216,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            padding: 1%;
-
-            .thesis-cover {
-                border: solid 2px black;
-            }
+            padding: 2em;
 
             .title {
                 font-family: 'PingFang HK';
@@ -288,7 +284,7 @@
 @media only screen and (max-width:1430px) {
 
     .HeroCell {
-        background-color: red;
+        // background-color: red;
 
         .upper-section {
             justify-content: center;
@@ -297,6 +293,15 @@
 
             .left-div {
                 width: 50%;
+            }
+        }
+
+        .right-div {
+            .greeting {
+            }
+
+            .title {
+                font-size: 1.5em !important;
             }
         }
     }
@@ -308,6 +313,38 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            row-gap: 1vh;
+            height: auto !important;
+            // background-color: red;
+
+            .contact-cell {
+                padding: 3em;
+                width: 80% !important;
+                background-color: red;
+                
+                a {
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .big-cell-1 {
+            flex-direction: column;
+            align-items: center;
+
+            .left, .right {
+                width: auto !important;
+            }
+        }
+
+
+        .big-cell-2 {
+
+        }
+
+        .technologies {
+            flex-wrap: wrap;
+            row-gap: 3vh;
         }
     }
 }

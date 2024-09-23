@@ -34,19 +34,21 @@
 }
 
 
-@media only screen and (max-width:1435px) {
-  .App {
+// -- Activate ONLY when the Mobile Version is under development
 
-    .content {
-      display: none !important;
-    }
+// @media only screen and (max-width:1435px) {
+//   .App {
 
-    .alert {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-    }
-  }    
-}
+//     .content {
+//       display: none !important;
+//     }
+
+//     .alert {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       width: 80%;
+//     }
+//   }    
+// }

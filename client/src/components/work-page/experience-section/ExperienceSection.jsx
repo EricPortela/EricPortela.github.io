@@ -9,7 +9,7 @@ import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/clien
 function ExperienceSection() {
     return ( 
         <div className='ExperienceSection'>
-            <p className='heading-2'>
+            <p className='section-header'>
                 Experience
             </p>
             <VerticalTimeline className='vertical-timeline-component'>

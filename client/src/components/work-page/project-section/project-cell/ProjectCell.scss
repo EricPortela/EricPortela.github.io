@@ -79,3 +79,31 @@
         }
     }
 }
+
+
+@media only screen and (max-width:1430px) {
+    .ProjectCell {
+        flex-direction: column;
+        height: auto;
+        row-gap: 2vh;
+
+        .text-div {
+            padding-top: 2vh;
+            width: 90%;
+            row-gap: 0.5vh;
+
+            p {
+                // padding: 0;
+            }
+
+            .title {
+                font-size: 1.4em;
+            }
+        }
+
+        .image-div {
+            width: 90%;
+            height: auto;
+        }
+    }
+}

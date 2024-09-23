@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './AboutMePage.scss';
 import Menu from '../../components/general-components/Menu.jsx'
-import SpeedDial from '../../components/general-components/SpeedDial.jsx'
+// import SpeedDial from '../../components/general-components/SpeedDial.jsx'
 
 import '../../components/text-styling/text-styling.scss'
 
@@ -116,7 +116,7 @@ function AboutMePage() {
       <div className='div-2'>
         
       </div>
-      <SpeedDial></SpeedDial>
+      {/* <SpeedDial></SpeedDial> */}
     </div>
   );
 }

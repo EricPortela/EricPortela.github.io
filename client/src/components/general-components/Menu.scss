@@ -13,6 +13,7 @@
     height: 10vh;
     flex-direction: row;
     padding-top: 3vh;
+    
 
     .left-div {
         font-family: 'PingFang HK';
@@ -60,6 +61,8 @@
 
         background: white;
         border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
@@ -96,6 +99,11 @@
 @media only screen and (max-width: 1000px) {
 
     .Menu {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        z-index: 500;
+
         .right-div {
             .default-menu-wrapper {
                 display: none;

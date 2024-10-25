@@ -177,6 +177,7 @@
                     border: 1px solid black;
                     margin: 0;
                     padding: 0;
+                    width: 80%;
                 }
             }
 
@@ -216,7 +217,8 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            padding: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
 
             .title {
                 font-family: 'PingFang HK';
@@ -308,6 +310,33 @@
 }
 
 @media only screen and (max-width:1000px) {
+
+    .HeroCell {
+        .upper-section {
+    
+            .left-div {
+                width: 50%;
+            }
+
+            .right-div {
+                .greeting {
+                    font-size: 26px !important;
+                }
+        
+                .title {
+                    font-size: 16px !important;
+                    .completed-goal-faded {
+                    }
+                }
+        
+                .about {
+                    font-size: 14px !important;
+                }
+            }
+            
+        }
+    }
+
     .middle-section {
         .contact-me {
             align-items: center;
@@ -319,12 +348,12 @@
 
             .contact-cell {
                 padding: 3em;
-                width: 50% !important;
+                width: 70% !important;
                 height: 8vh;
                 padding: 0;
                 
                 a {
-                    font-size: 50%;
+                    font-size: 70%;
                 }
             }
         }
@@ -332,20 +361,50 @@
         .big-cell-1 {
             flex-direction: column;
             align-items: center;
+            column-gap: 0;
+            row-gap: 0;
 
             .left, .right {
-                width: auto !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+
+                .title {
+                    font-size: 22px !important;
+                    padding: 5% !important;
+                    padding-bottom: 0 !important;
+                }
+
+                ul {
+                    padding-top: 0;
+                    width: 60%;
+                    margin-top: 0;
+
+                    a {
+                        font-size: 16px !important;
+                    }
+                }
             }
         }
 
 
         .big-cell-2 {
 
+            .title {
+                font-size: 22px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
         }
 
         .technologies {
             flex-wrap: wrap;
             row-gap: 3vh;
+
+            .image-div {
+            }
         }
     }
 }

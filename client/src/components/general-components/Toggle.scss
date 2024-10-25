@@ -42,3 +42,9 @@
         color: black;
       }
 }
+
+@media only screen and (max-width: 1000px) {
+    .Toggle {
+        width: 90%;
+    }
+}

@@ -1,3 +1,5 @@
+@import '../../components/text-styling/text-styling.scss';
+
 .OtherPage {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,20 @@
   
     width: 90vw;
     // padding: 0 5vw;
+    height: auto;
     
     row-gap: 5vh;
+
+    .subtitle {
+        @extend %normal-text;
+        font-weight: normal;
+        color: black;
+    }
+
+    .Gallery {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
 }

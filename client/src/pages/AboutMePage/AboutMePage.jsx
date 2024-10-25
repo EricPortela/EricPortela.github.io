@@ -6,6 +6,7 @@ import Menu from '../../components/general-components/Menu.jsx'
 import '../../components/text-styling/text-styling.scss'
 
 function AboutMePage() {
+  
 
   return (
     <div className="AboutMePage">

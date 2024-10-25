@@ -1,3 +1,11 @@
+%default-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;  
+}
+
+
 .Menu {
     // background-color: red;
     display: flex;
@@ -11,10 +19,15 @@
         font-weight: normal;
         font-size: 2em;
         display: flex;
+        flex-direction: row-reverse;
         width: 50%;
         justify-content: left;
         align-items: center;
         color: #2C2C2C;
+
+        .logo {
+            width: 80%;
+        }
     }
 
     .right-div {
@@ -25,9 +38,81 @@
         width: 50%;
         justify-content: right;
         align-items: center;
-        column-gap: 5vw;
         color: #7C7C7C;
         // background-color: red;
+
+        .default-menu-wrapper {
+            @extend %default-menu;
+        }
     }
 
+    .hamburger-wrapper {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2000;
+        padding: 0;
+        margin: 0;
+
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .overlay-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+        animation: slideInFromLeft 0.4s ease-in-out forwards;
+        opacity: 0;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .Menu {
+        .right-div {
+            .default-menu-wrapper {
+                display: none;
+            }
+
+            .hamburger-wrapper {
+                display: flex; 
+            }
+
+            .overlay-menu {
+                .menu-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 5vw;
+                }  
+            }
+        }
+    }
 }

@@ -6,12 +6,12 @@ import { ImageGallery } from "react-image-grid-gallery";
 const images = require.context('../../assets/photos-1', true);
 const imageList = images.keys().map(image => images(image));
 
+
 function OtherPage() {
 
   // Map over imported images to create an array of objects for ImageGallery
   const imagesArray = imageList.map((src, index) => ({
-    src,
-    loading: "lazy"
+    src
   }));
 
   console.log(imagesArray.length);

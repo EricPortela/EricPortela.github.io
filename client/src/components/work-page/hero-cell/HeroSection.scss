@@ -319,11 +319,12 @@
 
             .contact-cell {
                 padding: 3em;
-                width: 80% !important;
-                background-color: red;
+                width: 50% !important;
+                height: 8vh;
+                padding: 0;
                 
                 a {
-                    font-size: 1.2em;
+                    font-size: 50%;
                 }
             }
         }

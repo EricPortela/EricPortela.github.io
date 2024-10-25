@@ -2,18 +2,19 @@ import React, { useState, useRef } from 'react';
 import './OtherPage.scss';
 import Menu from '../../components/general-components/Menu.jsx'
 import { ImageGallery } from "react-image-grid-gallery"; 
-import fondDataMockup from '../../assets/fonddata-mockup.svg'; // Import image directly
 
-// Use require.context to import all images from the gallery folder
-const importAll = (requireContext) => requireContext.keys().map(requireContext);
-const images = importAll(require.context('../../assets/photos', false, /\.(png|jpe?g|svg|HEIC|heic)$/));
+const images = require.context('../../assets/photos', true);
+const imageList = images.keys().map(image => images(image));
 
 function OtherPage() {
 
   // Map over imported images to create an array of objects for ImageGallery
-  const imagesArray = images.map((src, index) => ({
+  const imagesArray = imageList.map((src, index) => ({
     src,
+    loading: "lazy"
   }));
+
+  console.log(imagesArray.length);
 
   return (
     <div className="OtherPage">

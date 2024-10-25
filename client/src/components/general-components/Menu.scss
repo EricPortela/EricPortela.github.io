@@ -103,6 +103,11 @@
         top: 0;
         overflow: hidden;
         z-index: 500;
+        background-color: white;
+        border-radius: 10px;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
 
         .right-div {
             .default-menu-wrapper {

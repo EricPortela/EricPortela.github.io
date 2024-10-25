@@ -3,7 +3,7 @@ import './OtherPage.scss';
 import Menu from '../../components/general-components/Menu.jsx'
 import { ImageGallery } from "react-image-grid-gallery"; 
 
-const images = require.context('../../assets/photos', true);
+const images = require.context('../../assets/photos-1', true);
 const imageList = images.keys().map(image => images(image));
 
 function OtherPage() {

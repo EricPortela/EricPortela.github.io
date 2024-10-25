@@ -34,7 +34,8 @@
 
     position: relative;
 
-    transition: all 0.3s;    
+    transition: all 0.3s; 
+    
 
     .upper-section {
         @extend %cell-layout;

@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 
 function GradeSection(params) {
 
+
     const [chartData, setChartData] = useState({
         labels: ['Grade 5', 'Grade 4', 'Grade 3'],  // Labels are consistent across charts
         datasets: []  // Initialize datasets as empty
@@ -35,7 +36,6 @@ function GradeSection(params) {
     }, []);  // Empty dependency array ensures this runs once
 
     return (
-        
         <motion.div 
             className='GradesSection'
             initial={{ opacity: 0, y: 50 }}

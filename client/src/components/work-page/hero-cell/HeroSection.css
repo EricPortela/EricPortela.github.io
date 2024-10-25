@@ -1,3 +1,53 @@
+.HeroCell .middle-section .big-cell-1 .right, .HeroCell .middle-section .big-cell-1 .left, .HeroCell .upper-section .right-div .title {
+  font-family: "PingFang HK";
+  font-weight: bold;
+  font-size: 2.1em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+
+.HeroCell .middle-section .big-cell-1 .right ul li, .HeroCell .upper-section .right-div .about {
+  font-family: "PingFang HK";
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.section-header {
+  font-family: "PingFang HK";
+  font-weight: normal;
+  font-size: 2em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.key-word {
+  font-weight: bold;
+}
+
+.HeroCell .middle-section .big-cell-2, .HeroCell .middle-section .big-cell-1 .right, .HeroCell .middle-section .big-cell-1 .left, .HeroCell .middle-section .contact-me .contact-cell, .HeroCell .upper-section {
+  display: flex;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.HeroCell .middle-section .big-cell-1 .right ul li a, .HeroCell .middle-section .big-cell-1 .left a, .HeroCell .middle-section .contact-me .contact-cell a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .HeroCell {
   display: flex;
   flex-direction: column;
@@ -10,14 +60,7 @@
   transition: all 0.3s;
 }
 .HeroCell .upper-section {
-  display: flex;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1em;
 }
 .HeroCell .upper-section .left-div {
   display: flex;
@@ -29,10 +72,17 @@
   margin: 5%;
 }
 .HeroCell .upper-section .left-div .image-me {
-  width: 85%;
+  width: 100%;
   height: auto;
   margin: 0;
-  padding: 5%;
+  border: solid 2px black;
+  padding: 10%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .HeroCell .upper-section .right-div {
   display: flex;
@@ -46,31 +96,123 @@
 .HeroCell .upper-section .right-div .greeting {
   font-family: "PingFang HK";
   font-weight: lighter;
-  font-size: 2em;
+  font-size: 2.2em;
   color: #7C7C7C;
   padding: 0;
   margin: 0;
   text-align: left;
 }
-.HeroCell .upper-section .right-div .title {
+.HeroCell .upper-section .right-div .title .completed-goal-faded {
+  color: rgba(0, 0, 0, 0.2);
+}
+.HeroCell .middle-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
+  padding-top: 1vh;
+  row-gap: 5vh;
+}
+.HeroCell .middle-section .contact-me {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-around;
+}
+.HeroCell .middle-section .contact-me .contact-cell {
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: white;
+}
+.HeroCell .middle-section .contact-me .contact-cell a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.HeroCell .middle-section .big-cell-1 {
+  display: flex;
+  width: 100%;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  justify-content: center;
+}
+.HeroCell .middle-section .big-cell-1 .right, .HeroCell .middle-section .big-cell-1 .left {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 0;
+  -moz-column-gap: 0;
+       column-gap: 0;
+  width: 44%;
+  padding: 5%;
+  text-align: center;
+}
+.HeroCell .middle-section .big-cell-1 .right p, .HeroCell .middle-section .big-cell-1 .left p {
+  padding: 0;
+  margin: 0;
+}
+.HeroCell .middle-section .big-cell-1 .left .thesis-cover {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+.HeroCell .middle-section .big-cell-1 .right {
+  justify-content: flex-start;
+  align-items: center;
+}
+.HeroCell .middle-section .big-cell-1 .right ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+.HeroCell .middle-section .big-cell-1 .right ul li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+.HeroCell .middle-section .big-cell-1 .right ul li {
+  font-size: 20px;
+  margin-top: 5%;
+}
+.HeroCell .middle-section .big-cell-2 {
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.HeroCell .middle-section .big-cell-2 .title {
   font-family: "PingFang HK";
   font-weight: bold;
-  font-size: 2.2em;
+  font-size: 2em;
   color: #7C7C7C;
   padding: 0;
   margin: 10px 0 10px 0;
-  text-align: left;
+  text-align: center;
 }
-.HeroCell .upper-section .right-div .about {
+.HeroCell .middle-section .big-cell-2 .subtitle {
+  width: 70%;
   font-family: "PingFang HK";
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 1.3em;
   color: #7C7C7C;
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
-.HeroCell .middle-section {
+.HeroCell .middle-section .technologies {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -79,7 +221,7 @@
        column-gap: 5vw;
   padding-top: 3vh;
 }
-.HeroCell .middle-section .image-div {
+.HeroCell .middle-section .technologies .image-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +231,7 @@
   background-color: white;
   box-shadow: 5px 5px 5px 5px lightgray;
 }
-.HeroCell .middle-section .image-div img {
+.HeroCell .middle-section .technologies .image-div img {
   height: 60%;
   width: auto;
 }
@@ -98,4 +240,83 @@
   align-items: flex-end;
   position: absolute;
   bottom: 0;
+}
+
+@media only screen and (max-width: 1430px) {
+  .HeroCell .upper-section {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .HeroCell .upper-section .left-div {
+    width: 50%;
+  }
+  .HeroCell .right-div .title {
+    font-size: 1.5em !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .HeroCell .upper-section .left-div {
+    width: 50%;
+  }
+  .HeroCell .upper-section .right-div .greeting {
+    font-size: 26px !important;
+  }
+  .HeroCell .upper-section .right-div .title {
+    font-size: 16px !important;
+  }
+  .HeroCell .upper-section .right-div .about {
+    font-size: 14px !important;
+  }
+  .middle-section .contact-me {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1vh;
+    height: auto !important;
+  }
+  .middle-section .contact-me .contact-cell {
+    padding: 3em;
+    width: 70% !important;
+    height: 8vh;
+    padding: 0;
+  }
+  .middle-section .contact-me .contact-cell a {
+    font-size: 70%;
+  }
+  .middle-section .big-cell-1 {
+    flex-direction: column;
+    align-items: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 0;
+  }
+  .middle-section .big-cell-1 .left, .middle-section .big-cell-1 .right {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .middle-section .big-cell-1 .left .title, .middle-section .big-cell-1 .right .title {
+    font-size: 22px !important;
+    padding: 5% !important;
+    padding-bottom: 0 !important;
+  }
+  .middle-section .big-cell-1 .left ul, .middle-section .big-cell-1 .right ul {
+    padding-top: 0;
+    width: 60%;
+    margin-top: 0;
+  }
+  .middle-section .big-cell-1 .left ul a, .middle-section .big-cell-1 .right ul a {
+    font-size: 16px !important;
+  }
+  .middle-section .big-cell-2 .title {
+    font-size: 22px !important;
+  }
+  .middle-section .big-cell-2 p {
+    font-size: 16px !important;
+  }
+  .middle-section .technologies {
+    flex-wrap: wrap;
+    row-gap: 3vh;
+  }
 }/*# sourceMappingURL=HeroSection.css.map */

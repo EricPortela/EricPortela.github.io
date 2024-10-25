@@ -58,4 +58,27 @@
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media only screen and (max-width: 1430px) {
+  .ProjectCell {
+    flex-direction: column;
+    height: auto;
+    row-gap: 2vh;
+  }
+  .ProjectCell .text-div {
+    padding-top: 2vh;
+    width: 90%;
+    row-gap: 0.5vh;
+  }
+  .ProjectCell .text-div p {
+    font-size: 16px !important;
+  }
+  .ProjectCell .text-div .title {
+    font-size: 22px !important;
+  }
+  .ProjectCell .image-div {
+    width: 90%;
+    height: auto;
+  }
 }/*# sourceMappingURL=ProjectCell.css.map */

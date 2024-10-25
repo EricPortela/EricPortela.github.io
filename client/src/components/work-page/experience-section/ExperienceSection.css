@@ -8,7 +8,7 @@
   width: 100%;
 }
 .ExperienceSection .vertical-timeline-component:before {
-  background-color: lightgray; /* Set your desired line color */
+  background-color: black; /* Set your desired line color */
 }
 .ExperienceSection .vertical-timeline-component .vertical-timeline-element p {
   margin: 0;
@@ -34,5 +34,16 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .ExperienceSection .vertical-timeline-component .vertical-timeline-element-icon {
-  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: none;
+}
+.ExperienceSection .vertical-timeline-component .vertical-timeline-element-icon img {
+  padding: 0;
+  margin: 0;
+  width: 85%;
+  height: auto;
+  color: black;
 }/*# sourceMappingURL=ExperienceSection.css.map */

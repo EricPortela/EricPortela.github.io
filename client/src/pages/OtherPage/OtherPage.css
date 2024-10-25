@@ -1,7 +1,42 @@
+.OtherPage .subtitle {
+  font-family: "PingFang HK";
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.section-header {
+  font-family: "PingFang HK";
+  font-weight: normal;
+  font-size: 2em;
+  color: #7C7C7C;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.key-word {
+  font-weight: bold;
+}
+
 .OtherPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90vw;
+  height: auto;
   row-gap: 5vh;
+}
+.OtherPage .subtitle {
+  font-weight: normal;
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .OtherPage .subtitle {
+    font-size: 16px !important;
+  }
 }/*# sourceMappingURL=OtherPage.css.map */

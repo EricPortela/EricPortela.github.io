@@ -2,9 +2,6 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import './HeroSection.scss';
 import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/eric-portela.png';
-import Lottie from 'react-lottie';
-import animationData from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/scroll-down.json';
-import animationData2 from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/test-2.json';
 import ThesisCover from '../../../assets/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.png';
 import Thesis from '../../../assets/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf';
 import '../../text-styling/text-styling.scss';
@@ -13,6 +10,11 @@ import Resume from '../../../assets/cv-eric-portela-2024.pdf';
 function HeroCell() {
     const [isLargeScreen, setIsLargeScreen] = React.useState(window.innerWidth > 1000);
 
+    const isChrome = () => {
+        const userAgent = window.navigator.userAgent;
+        return userAgent.includes('Chrome') && !userAgent.includes('Edg'); // Exclude Edge as it uses the Chromium engine
+      };
+
     // Update the screen size when the window resizes
     React.useEffect(() => {
         const handleResize = () => setIsLargeScreen(window.innerWidth > 1000);
@@ -20,23 +22,7 @@ function HeroCell() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
-
-    const defaultOptions2 = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData2,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
+    // };
 
     const technologies = [
         'java-logo.svg',
@@ -50,7 +36,7 @@ function HeroCell() {
     return (
         <div className='HeroCell'>
             <div className='upper-section'>
-                {isLargeScreen ? (
+                {isLargeScreen && !isChrome ? (
                     <motion.div
                         className='left-div'
                         initial={{ opacity: 0, y: 50 }}
@@ -89,7 +75,7 @@ function HeroCell() {
 
 
             <div className='middle-section'>
-                {isLargeScreen ? (
+                {isLargeScreen && !isChrome ? (
                     <motion.div 
                         className='contact-me'
                         initial={{ opacity: 0, y: 50 }}
@@ -122,7 +108,7 @@ function HeroCell() {
                 )}
 
 
-            {isLargeScreen ? (
+            {isLargeScreen && !isChrome ? (
                 <motion.div 
                     className='big-cell-1'
                     initial={{ opacity: 0, y: 50 }}
@@ -222,7 +208,7 @@ function HeroCell() {
             ) }
 
 
-            {isLargeScreen ? (
+            {isLargeScreen && !isChrome ? (
                 <motion.div 
                     className='big-cell-2'
                     initial={{ opacity: 0, y: 50 }}
@@ -247,7 +233,7 @@ function HeroCell() {
                 </div>
             ) }
 
-            {isLargeScreen ? (
+            {isLargeScreen && !isChrome ? (
                 <motion.div 
                     className='technologies'
                     initial={{ opacity: 0, y: 50 }}
@@ -271,15 +257,11 @@ function HeroCell() {
                 <div className='technologies'>
                     {technologies.map((item, index) => (
                         <div className="image-div">
-                            <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}
-                            />
+                            <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}/>
                         </div>
                     ))}
                 </div>
-            ) }
-
-
-                
+            ) }                
 
             </div>
         </div>

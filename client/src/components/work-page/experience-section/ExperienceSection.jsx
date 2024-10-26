@@ -4,7 +4,6 @@ import '../../text-styling/text-styling.scss'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import ExperienceData from '../../../data/experience.json'
-import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/memoji_hello.svg';
 
 function ExperienceSection() {
     return ( 

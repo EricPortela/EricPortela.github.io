@@ -13,9 +13,13 @@ import Other from './pages/OtherPage/OtherPage.jsx';
 import AlertImage from './assets/me-coding-1.jpg';
 
 function App() {
-  const { scrollYProgress } = useScroll();
 
-  console.log(scrollYProgress);
+  const isChrome = () => {
+    const userAgent = window.navigator.userAgent;
+    return userAgent.includes('Chrome') && !userAgent.includes('Edg'); // Exclude Edge as it uses the Chromium engine
+  };
+
+  const { scrollYProgress } = useScroll();
 
   return (
     <div className="App">
@@ -29,7 +33,7 @@ function App() {
         <img src={AlertImage} width='30%' height='auto'></img>
       </div>
       <div className='content'>
-        <motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />
+        { !isChrome (<motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />) }
         <Routes>
           <Route path="/work" element={<Work />} />
           <Route path="/about-me" element={<AboutMe />} />

@@ -11,6 +11,11 @@ function ProjectCells() {
 
     const [isLargeScreen, setIsLargeScreen] = React.useState(window.innerWidth > 1000);
 
+    const isChrome = () => {
+        const userAgent = window.navigator.userAgent;
+        return userAgent.includes('Chrome') && !userAgent.includes('Edg'); // Exclude Edge as it uses the Chromium engine
+      };
+
     return ( 
         <div className='ProjectSection'>
             <p className='section-header'>My Projects</p>
@@ -18,7 +23,7 @@ function ProjectCells() {
             { ProjectData.map((item, index) => (
                 // <ProjectCell project={item} />
 
-                isLargeScreen ? (
+                isLargeScreen && !isChrome ? (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 50 }}  // Start hidden and slightly below the natural position

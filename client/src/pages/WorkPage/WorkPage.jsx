@@ -9,7 +9,6 @@ import ExperienceSection from '../../components/work-page/experience-section/Exp
 
 
 import GradeSection from '../../components/work-page/grades-section/GradesSection.jsx';
-import animationData from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/background-blob.json';
 
 function WorkPage() {
   // State to manage the visibility of the ExperienceSection component
@@ -20,14 +19,6 @@ function WorkPage() {
     setShowExperience(isExperienceVisible);
   };
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
 
 
   return (

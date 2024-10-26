@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6364c6c1.css",
-    "main.js": "/static/js/main.dc01fd30.js",
+    "main.css": "/static/css/main.08b37255.css",
+    "main.js": "/static/js/main.e4299deb.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/DSCN2061.jpg": "/static/media/DSCN2061.73b777f8f13ee7be39f4.jpg",
     "static/media/DSCN1557.jpg": "/static/media/DSCN1557.5153f4d2760a69bec66f.jpg",
@@ -53,7 +53,7 @@
     "static/media/fonddata-mockup.png": "/static/media/fonddata-mockup.9ec7b50c53ec5e473210.png",
     "static/media/me-coding-2.JPG": "/static/media/me-coding-2.199514672c8eb33809da.JPG",
     "static/media/lth_logo.svg": "/static/media/lth_logo.9dbb6ac431b2311b4a67.svg",
-    "static/media/memoji_hello.svg": "/static/media/memoji_hello.a178d7548f1da3ef802f8b9ba18e10a3.svg",
+    "static/media/memoji_hello.svg": "/static/media/memoji_hello.a178d7548f1da3ef802f.svg",
     "static/media/med_logo.svg": "/static/media/med_logo.ccb03a186242ddd1dabc.svg",
     "static/media/19F5D799-23A6-4B4A-B3F1-0AAF81D921BE.jpg": "/static/media/19F5D799-23A6-4B4A-B3F1-0AAF81D921BE.58780cebfc176249562e.jpg",
     "static/media/cv-eric-portela-2024.pdf": "/static/media/cv-eric-portela-2024.90df82363ea9377c6338.pdf",
@@ -70,12 +70,12 @@
     "static/media/mysql-logo.svg": "/static/media/mysql-logo.5dbd7ffb56a921cecde4.svg",
     "static/media/spotify_logo.svg": "/static/media/spotify_logo.d38b37600ee55044c96e.svg",
     "index.html": "/index.html",
-    "main.6364c6c1.css.map": "/static/css/main.6364c6c1.css.map",
-    "main.dc01fd30.js.map": "/static/js/main.dc01fd30.js.map",
+    "main.08b37255.css.map": "/static/css/main.08b37255.css.map",
+    "main.e4299deb.js.map": "/static/js/main.e4299deb.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6364c6c1.css",
-    "static/js/main.dc01fd30.js"
+    "static/css/main.08b37255.css",
+    "static/js/main.e4299deb.js"
   ]
 }

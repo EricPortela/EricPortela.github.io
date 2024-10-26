@@ -5,7 +5,8 @@
         "startYear": "2024",
         "endYear": "present",
         "description": "Currently working on a project with the aim of displaying quarterly reported data for Swedish Mutual funds (open data). It's a fullstack project where the data is stored in a MySQL database, a REST-API created in node.js, frontend using TypeScript, React as framework and VITE as building tool.",
-        "imgName": "fonddata-mockup.svg"
+        "imgName": "fonddata-mockup.svg",
+        "website": ""
     },
 
     {
@@ -13,7 +14,8 @@
         "startYear": "2022",
         "endYear": "present",
         "description": "Currently solely an iOS app providing financial data for publicly listed companies on the NSYE and NASDAQ. Includes historical financial data (+10 years), SEC fillings, financial reports, insider trading, etc.",
-        "imgName": "finalytica-mockup.svg"
+        "imgName": "finalytica-mockup.svg",
+        "website": "https://finalytica.github.io"
     },
 
     {
@@ -21,6 +23,7 @@
         "startYear": "2019",
         "endYear": "2020",
         "description": "Sweden's first image classifier for parking signs. The app was integrated with a custom trained classifier programmed in Python, exported as a CoreML file, providing the user with sophisticated predictions (classification) of the taken image, also returning a result distribution (likelihoods).",
-        "imgName": "skylten-mockup.svg"
+        "imgName": "skylten-mockup.svg",
+        "website": "https://appadvice.com/app/skylten/1490436038"
     }
 ]

@@ -23,7 +23,7 @@
     .logo-div {
         // display: flex;
         column-gap: 1vw;
-        font-size: 10px;
+        font-size: 0.9em;
     }
 }
 
@@ -35,5 +35,9 @@
 
     .logo {
         width: 60%;
+    }
+
+    .logo-div {
+        font-size: 0.5em;
     }
 }

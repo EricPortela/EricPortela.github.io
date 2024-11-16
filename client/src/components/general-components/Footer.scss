@@ -20,10 +20,6 @@
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
     text-align: center;
 
-    .logo {
-        color: white;
-    }
-
     .logo-div {
         // display: flex;
         column-gap: 1vw;
@@ -35,5 +31,9 @@
     .footer-description {
         width: 75vw;
         font-size: 0.5em;
+    }
+
+    .logo {
+        width: 60%;
     }
 }

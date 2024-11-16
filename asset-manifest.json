@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e226a5f3.css",
-    "main.js": "/static/js/main.18d1ce18.js",
+    "main.css": "/static/css/main.3feabe9d.css",
+    "main.js": "/static/js/main.d6d064af.js",
     "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
     "static/media/DSCN2061.jpg": "/static/media/DSCN2061.73b777f8f13ee7be39f4.jpg",
     "static/media/DSCN1557.jpg": "/static/media/DSCN1557.5153f4d2760a69bec66f.jpg",
@@ -50,6 +50,7 @@
     "static/media/IMG_7091.jpg": "/static/media/IMG_7091.40e54d5a398180aa618e.jpg",
     "static/media/IMG_9316.jpg": "/static/media/IMG_9316.b6a4e3ccf189b9896fab.jpg",
     "static/media/eric-portela.png": "/static/media/eric-portela.f83a1264eb8b75c95454.png",
+    "static/media/cv-eric-portela-2024-nov.pdf": "/static/media/cv-eric-portela-2024-nov.3c75bc74755a21b063c3.pdf",
     "static/media/fonddata-mockup.png": "/static/media/fonddata-mockup.9ec7b50c53ec5e473210.png",
     "static/media/me-coding-2.JPG": "/static/media/me-coding-2.199514672c8eb33809da.JPG",
     "static/media/lth_logo.svg": "/static/media/lth_logo.9dbb6ac431b2311b4a67.svg",
@@ -66,16 +67,17 @@
     "static/media/js-logo.svg": "/static/media/js-logo.2a1fe4cada9df729c45e.svg",
     "static/media/linc_logo.svg": "/static/media/linc_logo.ab16dd084be8fab9c346.svg",
     "static/media/swift-logo.svg": "/static/media/swift-logo.32f9707cefab60f9e6d1.svg",
-    "static/media/website-logo.svg": "/static/media/website-logo.1f3df4e6c4d18d625a4ee9b35de64fa2.svg",
+    "static/media/website-logo-black.svg": "/static/media/website-logo-black.1f3df4e6c4d18d625a4ee9b35de64fa2.svg",
+    "static/media/website-logo-white.svg": "/static/media/website-logo-white.bfb67d7a687039734d28f81f6484032c.svg",
     "static/media/mysql-logo.svg": "/static/media/mysql-logo.5dbd7ffb56a921cecde4.svg",
     "static/media/spotify_logo.svg": "/static/media/spotify_logo.d38b37600ee55044c96e.svg",
     "index.html": "/index.html",
-    "main.e226a5f3.css.map": "/static/css/main.e226a5f3.css.map",
-    "main.18d1ce18.js.map": "/static/js/main.18d1ce18.js.map",
+    "main.3feabe9d.css.map": "/static/css/main.3feabe9d.css.map",
+    "main.d6d064af.js.map": "/static/js/main.d6d064af.js.map",
     "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e226a5f3.css",
-    "static/js/main.18d1ce18.js"
+    "static/css/main.3feabe9d.css",
+    "static/js/main.d6d064af.js"
   ]
 }

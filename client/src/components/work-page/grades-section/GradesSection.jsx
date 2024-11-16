@@ -36,23 +36,46 @@ function GradeSection(params) {
     }, []);  // Empty dependency array ensures this runs once
 
     return (
-        <motion.div 
-            className='GradesSection'
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 10,
-                delay: 0.3  // Delay to allow the container to animate first
-            }}
-            viewport={{ once: true, amount: 0.5 }}
-        >
+        <div className='GradesSection'> 
+        {/* // <motion.div 
+        //     className='GradesSection'
+        //     initial={{ opacity: 0, y: 50 }}
+        //     whileInView={{ opacity: 1, y: 0 }}
+        //     transition={{
+        //         type: "spring",
+        //         stiffness: 100,
+        //         damping: 10,
+        //         delay: 0.3  // Delay to allow the container to animate first
+        //     }}
+        //     viewport={{ once: true, amount: 0.5 }}
+        // > */}
             <div className='GradesHorizontalScroll'>
                 <p className='section-header'>Grades</p>
+                <div className='overview-div'>
+                    <div className='value-div'>
+                        <p className='value'>4 (3.2 GPA)</p>
+                        <p className='value-description'>Average Grade
+                    </p></div>
+                    <div className='value-div'>
+                        <p className='value'>26</p>
+                        <p className='value-description'>Taken courses: 26</p>
+                    </div>
+                    <div className='value-div'>
+                        <p className='value'>213</p>
+                        <p className='value-description'>Total ECTS Credits</p>
+                    </div>
+                    <div className='value-div'>
+                        <p className='value'>24</p>
+                        <p className='value-description'>Undergrad Courses</p>
+                    </div>
+                    <div className='value-div'>
+                        <p className='value'>2</p>
+                        <p className='value-description'>Grad Courses</p>
+                    </div>
+                </div>
                 <div className='my_grades'>
                     {GradesData.map((grade, index) => (
-                        <div className="grade_cell" id={index}>
+                        <div className="grade_cell" key={index}>
                             <p id="title">{grade.course_code} - {grade.course}</p>
                             <RadarChart 
                                 key={index} 
@@ -79,12 +102,15 @@ function GradeSection(params) {
                 <a href="https://www.student.ladok.se/student/app/studentwebb/start" target="_blank">(Ladok)</a>.
                 <br></br>
                 <br></br>
-                Interpreting this, the distrubution data (above) is tracked during a period of at least <span className="bold-text">two years.</span>
+                Interpreting this, the distrubution data (above) is tracked during a period of at least <span className="bold-text">two years. </span>
+                The data was last updated 2024-11-16.
                 <br></br>
                 <br></br>
                 ***
             </p>
-        </motion.div>
+        {/* </motion.div> */}
+        </div>
+
     );
     
 }

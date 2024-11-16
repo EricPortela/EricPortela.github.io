@@ -6,6 +6,7 @@ import Toggle from '../../components/general-components/Toggle.jsx'
 import HeroCell from '../../components/work-page/hero-cell/HeroSection.jsx';
 import ProjectCells from '../../components/work-page/project-section/ProjectSection.jsx';
 import ExperienceSection from '../../components/work-page/experience-section/ExperienceSection.jsx';
+import Footer from '../../components/general-components/Footer.jsx'
 
 
 import GradeSection from '../../components/work-page/grades-section/GradesSection.jsx';
@@ -31,6 +32,7 @@ function WorkPage() {
       {/* <ExperienceSection></ExperienceSection> */}
       {/* <SpeedDial></SpeedDial> */}
       <GradeSection></GradeSection>
+      <Footer></Footer>
     </div>
   );
 }

@@ -98,7 +98,7 @@ function AboutMePage() {
         learn from my mistakes. 
         <br></br>
         <br></br>
-        I know for a fact that <span className='key-word'> hard work always pays off</span>.
+        <span className='key-word'> Hard work always pays off</span>.
         <br></br>
         <br></br>
         (P.S. Thank you for reading this far).
@@ -107,12 +107,10 @@ function AboutMePage() {
         </p>
 
         <p className='signature'>
-          Signing off,
-          <br></br>
           Eric Portela
         </p>
         <br></br>
-        <p className='key-word'>[18th of September 2024, Helsingborg]</p>
+        <p className='key-word'>18th of September 2024, Helsingborg</p>
       </div>
       <div className='div-2'>
         

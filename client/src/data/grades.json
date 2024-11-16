@@ -101,11 +101,25 @@
     {
         "course": "Requirements Engineering",
 
-        "course_code": "n/a",
+        "course_code": "ETSF30",
 
         "credits": 7.5,
 
         "grade_distribution": [14, 99, 101],
+
+        "grade": 4,
+        
+        "course_plan": "link"
+    },
+
+    {
+        "course": "Computer Architectures and Operating Systems",
+
+        "course_code": "EITF60",
+
+        "credits": 7.5,
+
+        "grade_distribution": [13, 18, 168],
 
         "grade": 4,
         

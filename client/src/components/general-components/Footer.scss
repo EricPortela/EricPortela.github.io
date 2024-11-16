@@ -1,0 +1,39 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align text horizontally */
+    align-items: center; /* Center align text vertically */
+    
+    width: 98vw;
+    height: auto;
+    padding: 4% 0 4% 0;
+
+    background-color: black;
+    color: white; /* Light text color for readability */
+    border-radius: 10px 10px 0 0;
+   
+    font-family: 'PingFang HK';
+    font-weight: normal;
+    font-size: 2em;
+    font-size: 0.9rem; /* Adjust size to fit footer height */
+    letter-spacing: 0.5px; /* Slight spacing for a cleaner look */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    text-align: center;
+
+    .logo {
+        color: white;
+    }
+
+    .logo-div {
+        // display: flex;
+        column-gap: 1vw;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:1430px) {
+    .footer-description {
+        width: 75vw;
+        font-size: 0.5em;
+    }
+}

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Menu.scss'
 // import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/memoji_hello.svg';
-import WebsiteLogo from '../../assets/website-logo.svg'
+import WebsiteLogo from '../../assets/website-logo-black.svg'
 import { Link } from 'react-router-dom';
 import Hamburger from 'hamburger-react'
 

@@ -5,7 +5,7 @@ import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/clien
 import ThesisCover from '../../../assets/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.png';
 import Thesis from '../../../assets/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf';
 import '../../text-styling/text-styling.scss';
-import Resume from '../../../assets/cv-eric-portela-2024.pdf';
+import Resume from '../../../assets/cv-eric-portela-2024-nov.pdf';
 
 function HeroCell() {
     const [isLargeScreen, setIsLargeScreen] = React.useState(window.innerWidth > 1000);
@@ -247,7 +247,7 @@ function HeroCell() {
                         viewport={{ once: true, amount: 0.5 }}
                 >
                     {technologies.map((item, index) => (
-                        <div className="image-div">
+                        <div className="image-div" key={index}>
                             <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}
                             />
                         </div>
@@ -256,7 +256,7 @@ function HeroCell() {
             ) : (
                 <div className='technologies'>
                     {technologies.map((item, index) => (
-                        <div className="image-div">
+                        <div className="image-div" key={index}>
                             <img src={require("../../../assets/" + item)} alt={item} width={100} height={'auto'}/>
                         </div>
                     ))}

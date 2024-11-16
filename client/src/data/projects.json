@@ -4,7 +4,7 @@
         "title": "Fond|Data by Finalytica [In Progress]",
         "startYear": "2024",
         "endYear": "present",
-        "description": "Currently working on a project with the aim of displaying quarterly reported data for Swedish Mutual funds (open data). It's a fullstack project where the data is stored in a MySQL database, a REST-API created in node.js, frontend using TypeScript, React as framework and VITE as building tool.",
+        "description": "Currently working on a project with the aim of displaying quarterly data for mutual funds. It's a fullstack project where the data is stored in a MySQL database, a REST-API created in node.js, frontend using TypeScript, React as framework and VITE as building tool.",
         "imgName": "fonddata-mockup.svg",
         "website": ""
     },

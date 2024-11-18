@@ -58,7 +58,7 @@ function GradeSection(params) {
                     </p></div>
                     <div className='value-div'>
                         <p className='value'>26</p>
-                        <p className='value-description'>Taken courses: 26</p>
+                        <p className='value-description'>Taken courses</p>
                     </div>
                     <div className='value-div'>
                         <p className='value'>213</p>

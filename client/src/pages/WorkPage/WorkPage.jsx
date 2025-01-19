@@ -32,7 +32,7 @@ function WorkPage() {
       {/* <ExperienceSection></ExperienceSection> */}
       {/* <SpeedDial></SpeedDial> */}
       <GradeSection></GradeSection>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import './AboutMePage.scss';
 import Menu from '../../components/general-components/Menu.jsx'
 // import SpeedDial from '../../components/general-components/SpeedDial.jsx'
+import Footer from '../../components/general-components/Footer.jsx'
+
 
 import '../../components/text-styling/text-styling.scss'
 
@@ -116,6 +118,7 @@ function AboutMePage() {
         
       </div>
       {/* <SpeedDial></SpeedDial> */}
+      <Footer></Footer>
     </div>
   );
 }

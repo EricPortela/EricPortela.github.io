@@ -2,9 +2,11 @@ import React, { useState, useRef } from 'react';
 import './OtherPage.scss';
 import Menu from '../../components/general-components/Menu.jsx'
 import { ImageGallery } from "react-image-grid-gallery"; 
+import Footer from '../../components/general-components/Footer.jsx'
 
 const images = require.context('../../assets/photos-1', true);
 const imageList = images.keys().map(image => images(image));
+
 
 
 function OtherPage() {
@@ -34,6 +36,7 @@ function OtherPage() {
         columnWidth={300}
         gapSize={24}
       />
+      <Footer></Footer>
     </div>
   );
 }

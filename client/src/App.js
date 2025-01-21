@@ -11,7 +11,6 @@ import AboutMe from './pages/AboutMePage/AboutMePage.jsx';
 import Work from './pages/WorkPage/WorkPage.jsx';
 import Other from './pages/OtherPage/OtherPage.jsx';
 import AlertImage from './assets/me-coding-1.jpg';
-import Footer from './components/general-components/Footer.jsx'
 
 function App() {
 
@@ -41,7 +40,6 @@ function App() {
           <Route path="/other" element={<Other />} />
         </Routes>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='alert'>
+      {/* <div className='alert'>
         <h1>
           Under construction ! 🚧🛠️
           <br></br>
@@ -49,7 +49,7 @@ function App() {
         </h1>
         <br></br>
         <img src={AlertImage} width='30%' height='auto'></img>
-      </div>
+      </div> */}
       <div className='content'>
         { !isChrome (<motion.div  className="progress-bar" style={{ scaleX: scrollYProgress }} />) }
         <Routes>

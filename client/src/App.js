@@ -61,7 +61,7 @@ function App() {
             path="*"
             element={
               <div className="incorrect-page-div">
-                <p className='text-alert'>Oops! You have managed to land on the wrong page.</p>
+                <h2 className='text-alert'>Oops! You have managed to land on the wrong page.</h2>
                 <div className='animationView'>
                   { View }
                 </div>

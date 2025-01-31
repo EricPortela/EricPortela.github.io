@@ -100,9 +100,6 @@ function AboutMePage() {
         learn from my mistakes. 
         <br></br>
         <br></br>
-        <span className='key-word'> Hard work always pays off</span>.
-        <br></br>
-        <br></br>
         (P.S. Thank you for reading this far).
         <br></br>
         <br></br>

@@ -125,7 +125,6 @@ function HeroCell() {
                         <a href={Thesis} target='_blank'>
                             <p className='title'>Bachelor's thesis conducted <br></br >@ IKEA in Malmö 🔗</p>
                             <br></br>
-                            {/* <p className='subtitle'>AI-driven Predictive Event Orchestration using Scalable Data Pipelines</p> */}
                             <img className='thesis-cover' src={ThesisCover} alt='Thesis-Cover' width={350} height={'auto'}></img>
                         </a>
                     </div>
@@ -168,7 +167,6 @@ function HeroCell() {
                         <a href={Thesis} target='_blank'>
                             <p className='title'>Bachelor's thesis conducted <br></br >@ IKEA in Malmö 🔗</p>
                             <br></br>
-                            {/* <p className='subtitle'>AI-driven Predictive Event Orchestration using Scalable Data Pipelines</p> */}
                             <img className='thesis-cover' src={ThesisCover} alt='Thesis-Cover' width={350} height={'auto'}></img>
                         </a>
                     </div>
@@ -177,15 +175,15 @@ function HeroCell() {
                         <p className='title'>What's currently on my agenda?</p>
                         <br></br>
                         <ul>
-                            <li>
+                            {/* <li>
                                 <a href='https://www.cloudskillsboost.google/paths/11' target='_blank'>
                                     Started Google Cloud Engineering path 🔗
                                     <br></br>
                                     [Sept. 20th 2024 - present]
                                 </a>
-                            </li>
+                            </li> */}
                             
-                            <li>
+                            {/* <li>
                                 <a href='https://www.control.lth.se/education/engineering-program/frtn65-modeling-and-learning-from-data/' target='_blank'>
                                     Machine Learning course in my Master studies 🔗 
                                     <br></br>
@@ -193,7 +191,7 @@ function HeroCell() {
                                     <br></br>
                                     [Sept. 2nd 2024 - Jan. 19th 2025]
                                 </a>
-                            </li>
+                            </li> */}
 
                             <li>
                                 <a >

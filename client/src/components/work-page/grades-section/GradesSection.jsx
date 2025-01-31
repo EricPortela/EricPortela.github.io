@@ -53,9 +53,9 @@ function GradeSection(params) {
                 <p className='section-header'>Grades</p>
                 <div className='overview-div'>
                     <div className='value-div'>
-                        <p className='value'>4 (3.2 GPA)</p>
-                        <p className='value-description'>Average Grade
-                    </p></div>
+                        <p className='value'>4</p>
+                        <p className='value-description'>Average Grade</p>
+                    </div>
                     <div className='value-div'>
                         <p className='value'>26</p>
                         <p className='value-description'>Taken courses</p>
@@ -97,8 +97,10 @@ function GradeSection(params) {
                 ***
                 <br></br>
                 <br></br>
-                Disclaimer: 
-                <em> A grading table is shown for courses where the same grading has been used during at least two years </em>
+                NB! The <span className="bold-text">Faculty of Engineering at Lund University</span> has a three level grade scale (3, 4 and 5).
+                <br></br>
+                <br></br>
+                Disclaimer: <em> A grading table is shown for courses where the same grading has been used during at least two years </em>
                 <a href="https://www.student.ladok.se/student/app/studentwebb/start" target="_blank">(Ladok)</a>.
                 <br></br>
                 <br></br>

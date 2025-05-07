@@ -17,7 +17,7 @@ function AboutMePage() {
         <h1>Hello!</h1>
         <p className='normal-text'>
         My name is Eric Portela. I am a 24-year-old focused and responsible Computer Science student 
-        (M.Sc. Computer Science and engineering at Lund University or Lunds Tekniska Högskola) with
+        (B.Sc. Computer Science and engineering at Lund University or Lunds Tekniska Högskola) with
         a strong passion for software development, as you already might have guessed.
 
         <br></br>

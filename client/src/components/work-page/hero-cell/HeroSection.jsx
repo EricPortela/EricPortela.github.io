@@ -65,7 +65,7 @@ function HeroCell() {
                     <p className='title'>
                         <span className='completed-goal-faded'>[B.Sc. Computer Science & Engineering @ LTH] [✔️]</span>
                         <br />
-                        [M.Sc. Computer Science & Engineering @ LTH] [⏳]
+                        {/* [M.Sc. Computer Science & Engineering @ LTH] [⏳] */}
                     </p>
                     <p className='about'>
                     I'm currently a M.Sc. student majoring in Computer Science and Engineering. I'm passionate about programming meaningful applications in combination with minimalistic, plain, and user-friendly interfaces. Simply put, I love programming and collaborating! <br></br> <br></br> I believe <span className='key-word'>resilience</span>, <span className='key-word'>hard work</span> and <span className='key-word'>passion</span> for what you do will take you far. I always seek to improve and challenge myself, but also make sure to have fun along the way.

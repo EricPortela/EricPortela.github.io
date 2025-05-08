@@ -5,7 +5,7 @@ import ThesisCover from '../../../assets/AI-driven-predictive-event-orchestratio
 import Resume from '../../../assets/cv-eric-portela-2024-nov.pdf';
 import '../../text-styling/text-styling.scss';
 import './HeroSection.scss';
-import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/eric-portela-id-photo.jpeg';
+import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/eric-portela.png';
 
 function HeroCell() {
     const [isLargeScreen, setIsLargeScreen] = React.useState(window.innerWidth > 1000);

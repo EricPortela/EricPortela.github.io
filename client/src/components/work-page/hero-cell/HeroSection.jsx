@@ -1,11 +1,11 @@
-import * as React from 'react';
 import { motion } from 'framer-motion';
+import * as React from 'react';
+import Thesis from '../../../assets/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf';
+import ThesisCover from '../../../assets/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.png';
+import Resume from '../../../assets/cv-eric-portela-2024-nov.pdf';
+import '../../text-styling/text-styling.scss';
 import './HeroSection.scss';
 import memoji from '/Users/ericportela/Documents/GitHub/EricPortelaWebsite/client/src/assets/eric-portela-id-photo.jpeg';
-import ThesisCover from '../../../assets/AI-driven-predictive-event-orchestration-using-scalable-data-pipelines-cover.png';
-import Thesis from '../../../assets/AI-driven Predictive Event Orchestration using Scalable Data Pipelines.pdf';
-import '../../text-styling/text-styling.scss';
-import Resume from '../../../assets/cv-eric-portela-2024-nov.pdf';
 
 function HeroCell() {
     const [isLargeScreen, setIsLargeScreen] = React.useState(window.innerWidth > 1000);
@@ -68,7 +68,7 @@ function HeroCell() {
                         {/* [M.Sc. Computer Science & Engineering @ LTH] [⏳] */}
                     </p>
                     <p className='about'>
-                    I'm currently a M.Sc. student majoring in Computer Science and Engineering. I'm passionate about programming meaningful applications in combination with minimalistic, plain, and user-friendly interfaces. Simply put, I love programming and collaborating! <br></br> <br></br> I believe <span className='key-word'>resilience</span>, <span className='key-word'>hard work</span> and <span className='key-word'>passion</span> for what you do will take you far. I always seek to improve and challenge myself, but also make sure to have fun along the way.
+                    I'm currently a B.Sc. student majoring in Computer Science and Engineering. I'm passionate about programming meaningful applications in combination with minimalistic, plain, and user-friendly interfaces. Simply put, I love programming and collaborating! <br></br> <br></br> I believe <span className='key-word'>resilience</span>, <span className='key-word'>hard work</span> and <span className='key-word'>passion</span> for what you do will take you far. I always seek to improve and challenge myself, but also make sure to have fun along the way.
                     </p>
                 </div>
             </div>

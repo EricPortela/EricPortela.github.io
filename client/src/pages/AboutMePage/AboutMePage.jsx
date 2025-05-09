@@ -79,7 +79,7 @@ function AboutMePage() {
         </ul>
         <br></br>
         Regarding the last point, I would like to mention that although I consider myself very much a
-        Swede (on both a cultural and factual level) I'm a so-called first generation Swede to 
+        Swede 🇸🇪❤️ (on both a cultural and factual level) I'm a so-called first generation Swede to 
         immigrant parents. It's part of my identity and especially one part I'm very proud of. 
         <br></br>
         <br></br>
